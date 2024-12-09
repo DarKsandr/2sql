@@ -1,4 +1,5 @@
 <script setup>
+import SqlSelectLink from '../components/Links/SqlSelectLink.vue';
 
 </script>
 
@@ -14,14 +15,12 @@ INSERT INTO table_name ([column_name, ... ]) VALUES (expressions, ...)
 INSERT INTO table_name VALUES (expressions, ...)
 </pre>
     <p>Запись значений может производиться и с помощью оператора
-        <RouterLink :to="{ name: 'sql-select' }" title="Оператор SQL SELECT - примеры использования">SQL SELECT
-        </RouterLink>:
+        <SqlSelectLink />:
     </p>
     <pre class="brush: sql; title: ; notranslate" title="">
 INSERT INTO table_name SELECT column_name,... FROM table_name
 </pre>
-    <p>Используя оператор <RouterLink :to="{ name: 'sql-select' }" title="Оператор SQL SELECT - примеры использования">SQL
-            SELECT</RouterLink>
+    <p>Используя оператор <SqlSelectLink />
         можно вставить более одной записи. В случае, если если для каких-либо полей таблицы не указаны
         значения, они будут заменены значением по умолчанию null.</p>
     <hr />
@@ -208,8 +207,7 @@ SELECT * FROM Planets
     <p><strong>Задача:</strong> С помощью оператора SQL INSERT вставить записи из таблицы PlanetsWithRings в таблицу
         PlanetsWithoutRings.</p>
     <p>Данную задачу можно решить двумя запросами SQL INSERT, как было показано в Примере 1. Однако, мы воспользуемся
-        вставкой строк с помощью оператора <RouterLink :to="{ name: 'sql-select' }"
-            title="Оператор SQL SELECT - примеры использования">SQL SELECT</RouterLink>:</p>
+        вставкой строк с помощью оператора <SqlSelectLink />:</p>
     <pre class="brush: sql; title: ; notranslate" title="">
 INSERT INTO PlanetsWithoutRings
 SELECT ID, PlanetName, Radius, SunSeason, OpeningYear, HavingRings, Opener

@@ -13,6 +13,13 @@ export const basic = [
             text: 'SQL INSERT',
         }, component: () => import('./pages/SqlInsert.vue')
     },
+    {
+        path: '/basic/sql-update', name: 'sql-update', meta: {
+            title: 'Оператор SQL UPDATE: примеры, синтаксис',
+            h1: 'Оператор SQL UPDATE',
+            text: 'SQL UPDATE',
+        }, component: () => import('./pages/SqlUpdate.vue')
+    },
 ];
 
 export const advanced = [];
