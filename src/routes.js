@@ -27,6 +27,13 @@ export const basic = [
             text: 'SQL DELETE',
         }, component: () => import('./pages/SqlDelete.vue')
     },
+    {
+        path: '/basic/sql-where', name: 'sql-where', meta: {
+            title: 'Оператор SQL WHERE: примеры, синтаксис',
+            h1: 'Оператор SQL WHERE',
+            text: 'SQL WHERE',
+        }, component: () => import('./pages/SqlWhere.vue')
+    },
 ];
 
 export const advanced = [];

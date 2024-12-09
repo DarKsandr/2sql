@@ -48,7 +48,7 @@ import Footer from './components/Footer.vue';
   text-align: justify;
   padding: 10px;
   -moz-border-radius: 5px;
-  width: 55%;
+  width: 65%;
 }
 .entry{
   margin-top: 30px;
