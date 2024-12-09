@@ -48,6 +48,13 @@ export const basic = [
             text: 'SQL GROUP BY',
         }, component: () => import('./pages/SqlGroupBy.vue')
     },
+    {
+        path: '/basic/sql-having', name: 'sql-having', meta: {
+            title: 'Оператор SQL HAVING: примеры, синтаксис',
+            h1: 'Оператор SQL HAVING',
+            text: 'SQL HAVING',
+        }, component: () => import('./pages/SqlHaving.vue')
+    },
 ];
 
 export const advanced = [];
