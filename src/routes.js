@@ -34,6 +34,13 @@ export const basic = [
             text: 'SQL WHERE',
         }, component: () => import('./pages/SqlWhere.vue')
     },
+    {
+        path: '/basic/sql-order-by', name: 'sql-order-by', meta: {
+            title: 'Оператор SQL ORDER BY: синтаксис, примеры',
+            h1: 'Оператор SQL ORDER BY',
+            text: 'SQL ORDER BY',
+        }, component: () => import('./pages/SqlOrderBy.vue')
+    },
 ];
 
 export const advanced = [];
