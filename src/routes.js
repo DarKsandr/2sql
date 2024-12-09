@@ -20,6 +20,13 @@ export const basic = [
             text: 'SQL UPDATE',
         }, component: () => import('./pages/SqlUpdate.vue')
     },
+    {
+        path: '/basic/sql-delete', name: 'sql-delete', meta: {
+            title: 'Оператор SQL DELETE: синтаксис, примеры',
+            h1: 'Оператор SQL DELETE',
+            text: 'SQL DELETE',
+        }, component: () => import('./pages/SqlDelete.vue')
+    },
 ];
 
 export const advanced = [];
