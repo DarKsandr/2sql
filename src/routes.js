@@ -62,6 +62,13 @@ export const basic = [
             text: 'SQL DISTINCT',
         }, component: () => import('./pages/SqlDistinct.vue')
     },
+    {
+        path: '/basic/sql-and-or', name: 'sql-and-or', meta: {
+            title: 'Предикаты SQL AND и OR: примеры, синтаксис',
+            h1: 'Операторы SQL AND и OR',
+            text: 'SQL AND и OR',
+        }, component: () => import('./pages/SqlAndOr.vue')
+    },
 ];
 
 export const advanced = [];
