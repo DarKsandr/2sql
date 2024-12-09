@@ -41,6 +41,13 @@ export const basic = [
             text: 'SQL ORDER BY',
         }, component: () => import('./pages/SqlOrderBy.vue')
     },
+    {
+        path: '/basic/sql-group-by', name: 'sql-group-by', meta: {
+            title: 'Оператор SQL GROUP BY: синтаксис, примеры',
+            h1: 'Оператор SQL GROUP BY',
+            text: 'SQL GROUP BY',
+        }, component: () => import('./pages/SqlGroupBy.vue')
+    },
 ];
 
 export const advanced = [];
