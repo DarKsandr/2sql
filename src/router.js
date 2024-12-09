@@ -4,9 +4,7 @@ import { nextTick } from 'vue';
 
 const routes = [
     { path: '/', name: 'home', component: () => import('./pages/Main.vue') },
-    { path: '/basic', children: [
-        { path: '/sql-select', name: 'sql-select', meta: {title: 'Оператор SQL SELECT: примеры, синтаксис', h1: 'Оператор SQL SELECT'}, component: () => import('./pages/SqlSelect.vue') },
-    ] },
+    { path: '/basic/sql-select', name: 'sql-select', meta: {title: 'Оператор SQL SELECT: примеры, синтаксис', h1: 'Оператор SQL SELECT'}, component: () => import('./pages/SqlSelect.vue') },
 ]
 
 const router = createRouter({
