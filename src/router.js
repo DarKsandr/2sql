@@ -1,4 +1,4 @@
-import { createWebHistory, createRouter } from 'vue-router';
+import { createWebHashHistory, createRouter } from 'vue-router';
 import SyntaxHighlighterInit from './SyntaxHighlighter.js';
 import { nextTick } from 'vue';
 import { BASE_NAME, BASE_URL } from './config.js';
@@ -9,7 +9,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createWebHistory(BASE_URL),
+    history: createWebHashHistory(BASE_URL),
     routes,
 });
 
