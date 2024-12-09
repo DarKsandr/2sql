@@ -9,7 +9,7 @@ const currentYear = new Date().getFullYear();
         связь</a>
     </p>
     <p class="alignright">
-      <RouterLink to="/">2SQL.RU</RouterLink> (c) 2013-{{ currentYear }}
+      <RouterLink :to="{name: 'home'}">2SQL.RU</RouterLink> (c) 2013-{{ currentYear }}
     </p>
   </div>
 </template>

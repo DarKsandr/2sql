@@ -10,7 +10,7 @@ import Footer from './components/Footer.vue';
     <Sidebar />
     <div id="poster">
       <div id="post-content">
-        <h1><a href="/" rel="bookmark"></a></h1>
+        <h1><a href="#" rel="bookmark" @click.prevent>{{ $route.meta.h1 }}</a></h1>
         <div class="entry">
           <RouterView />
         </div>
@@ -35,15 +35,12 @@ import Footer from './components/Footer.vue';
 	"sidebar poster" max-content
 	"footer footer" min-content / min-content auto;
 }
-
 #poster {
   grid-area: poster;
 }
-
 #poster>div {
   margin-bottom: 70px;
 }
-
 #post-content {
   margin: 0 20px 40px 40px;
   font-size: 1.2em;
@@ -52,6 +49,9 @@ import Footer from './components/Footer.vue';
   padding: 10px;
   -moz-border-radius: 5px;
   width: 55%;
+}
+.entry{
+  margin-top: 30px;
 }
 @media only screen and (max-width: 1400px) {
   #post-content {

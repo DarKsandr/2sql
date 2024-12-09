@@ -1,9 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import './css/main.css';
-import './SyntaxHighlighter.js';
 import router from './router.js';
 
 createApp(App)
 .use(router)
-.mount('#app')
+.mount('#app');

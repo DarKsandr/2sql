@@ -8,7 +8,7 @@
             <li id="search-2" class="widgetall widget_search">
                 <h2 class="widgettitle">Поиск</h2>
                 <form role="search" method="get" id="searchform" class="searchform"
-                    action="https://web.archive.org/web/20240622214823/http://2sql.ru/">
+                    action="">
                     <div>
                         <label class="screen-reader-text" for="s">Найти:</label>
                         <input type="text" value="" name="s" id="s" />
@@ -20,12 +20,10 @@
                 <h2 class="widgettitle">Основы языка SQL</h2>
                 <div class="menu-osnovy-yazy-ka-sql-container">
                     <ul id="menu-osnovy-yazy-ka-sql" class="menu">
-                        <li id="menu-item-5"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5"><a
-                                href="https://web.archive.org/web/20240622214823/http://2sql.ru/basic/sql-select/">SQL
-                                SELECT</a>
+                        <li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5">
+                            <RouterLink :to="{name: 'sql-select'}">SQL SELECT</RouterLink>
                         </li>
-                        <li id="menu-item-6"
+                        <!-- <li id="menu-item-6"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6"><a
                                 href="https://web.archive.org/web/20240622214823/http://2sql.ru/basic/sql-insert/">SQL
                                 INSERT</a>
@@ -67,14 +65,14 @@
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a
                                 href="https://web.archive.org/web/20240622214823/http://2sql.ru/basic/sql-and-or/">SQL
                                 AND &#038;
-                                OR</a></li>
+                                OR</a></li> -->
                     </ul>
                 </div>
             </li>
             <li id="nav_menu-3" class="widgetall widget_nav_menu">
                 <h2 class="widgettitle">Дополнительные возможности SQL</h2>
                 <div class="menu-dopolnitel-ny-e-vozmozhnosti-sql-container">
-                    <ul id="menu-dopolnitel-ny-e-vozmozhnosti-sql" class="menu">
+                    <!-- <ul id="menu-dopolnitel-ny-e-vozmozhnosti-sql" class="menu">
                         <li id="menu-item-17"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a
                                 href="https://web.archive.org/web/20240622214823/http://2sql.ru/advanced/sql-inner-join/">SQL
@@ -171,13 +169,13 @@
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23"><a
                                 href="https://web.archive.org/web/20240622214823/http://2sql.ru/advanced/sql-between/">SQL
                                 BETWEEN</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
             </li>
             <li id="nav_menu-4" class="widgetall widget_nav_menu">
                 <h2 class="widgettitle">Функции языка SQL</h2>
                 <div class="menu-funktsii-yazy-ka-sql-container">
-                    <ul id="menu-funktsii-yazy-ka-sql" class="menu">
+                    <!-- <ul id="menu-funktsii-yazy-ka-sql" class="menu">
                         <li id="menu-item-24"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a
                                 href="https://web.archive.org/web/20240622214823/http://2sql.ru/functions/sql-count/">SQL
@@ -238,7 +236,7 @@
                                 href="https://web.archive.org/web/20240622214823/http://2sql.ru/functions/sql-now/">SQL
                                 NOW()</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </li>
         </ul>
