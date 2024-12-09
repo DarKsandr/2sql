@@ -6,6 +6,7 @@ import { BASE_NAME, BASE_URL } from './config.js';
 const routes = [
     { path: '/', name: 'home', component: () => import('./pages/Main.vue') },
     { path: '/basic/sql-select', name: 'sql-select', meta: {title: 'Оператор SQL SELECT: примеры, синтаксис', h1: 'Оператор SQL SELECT'}, component: () => import('./pages/SqlSelect.vue') },
+    { path: '/basic/sql-insert', name: 'sql-insert', meta: {title: 'Оператор SQL INSERT', h1: 'Оператор SQL INSERT'}, component: () => import('./pages/SqlInsert.vue') },
 ]
 
 const router = createRouter({
