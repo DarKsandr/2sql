@@ -55,6 +55,13 @@ export const basic = [
             text: 'SQL HAVING',
         }, component: () => import('./pages/SqlHaving.vue')
     },
+    {
+        path: '/basic/sql-distinct', name: 'sql-distinct', meta: {
+            title: 'Оператор SQL DISTINCT: примеры, синтаксис',
+            h1: 'Оператор SQL DISTINCT',
+            text: 'SQL DISTINCT',
+        }, component: () => import('./pages/SqlDistinct.vue')
+    },
 ];
 
 export const advanced = [];
