@@ -244,3 +244,32 @@
         </ul>
     </div>
 </template>
+
+<style scoped>
+#sidebar {
+	border-right: 1px solid #FFFF00;
+	width: 220px;
+	padding: 10px;
+	min-height: 600px;
+	margin-bottom: 40px;
+	grid-area: sidebar;
+}
+
+#sidebar>ul {
+	color: #fff;
+	width: 100%;
+	list-style-type: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar>ul>li {
+	width: 190px;
+	margin: 10px;
+}
+
+#sidebar>ul>li>ul {
+	list-style-type: none;
+}
+</style>
