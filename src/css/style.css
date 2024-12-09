@@ -1,0 +1,478 @@
+/*
+Theme Name: nocturnal
+Theme URI: http://www.demobul.com/cms/blog/wordpress/nocturnal-theme
+Description: Dark theme, nocturnal is created by <a href="www.demobul.com">demobul.com</a> editors for your blog. Another dark theme fluvio is also available.
+Version: 1.0
+Author: Demobul.com editors
+Author URI: http://www.demobul.com/
+Tags: flexible-width, two-columns, right-sidebar
+*/
+
+html { /* Vertical Scrollbar */
+	/* IE */
+	overflow-y: scroll; 
+	/* Moz illa*/
+	height: 100%;
+	margin-bottom: 0.1em;
+}
+
+* {
+	/*padding: 0;*/
+	margin: 0;
+}
+
+img {
+	border: 0;
+	/*max-width:490px;*/
+}
+
+	
+input {
+	font: 80% 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	color: #494949;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-family:'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+h1 {
+	font-size: 170%;
+}
+
+h2 {
+	font-size: 160%;
+	line-height: 130%;
+}
+
+h3 {
+	font-size: 140%;
+	color:#fff;
+}
+
+h4 {
+	font-size: 130%;
+}
+
+h5 {
+	font-size: 120%;
+}
+
+h6 {
+	font-size: 110%;
+}
+
+ul, quote, code, fieldset {
+	margin: .5em 0;
+}
+
+p {
+	margin: 0.6em 0 1.2em;
+	padding: 0;
+}	
+a:link, a:visited {
+	line-height:20px;
+	font-size:85%;
+	color: #FFFF00;
+	text-decoration: none;
+}
+
+.fl {
+	font-size:100% !important;
+}
+
+a:hover {
+	line-height:20px;
+	font-size:85%;
+	color: #FFFF00;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px black, 0 0 1em yellow;
+}
+/*
+a:active, a.active {
+	line-height:20px;
+	font-size:85%;
+	color: #FFFF00;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px black, 0 0 1em yellow;
+}*/
+
+#title_text {
+	font-size: 120%;
+}
+
+#clear{
+	float:none;
+	clear:both;
+	visibility:hidden;
+}
+
+body {
+	font: 70% 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	background: #000 none repeat scroll 0 0;
+	text-align:center;
+	line-height:20px;
+	}
+	
+#page {
+	text-align: left;
+	width:100%;
+	min-width:1100px;
+	background:url(/src/images/bg1.png);
+	background-attachment: fixed;
+	padding:0;
+	min-height:600px;
+	color:#fff;
+	}
+
+#header {
+	width:100%;
+	height:40px;
+	margin-bottom:20px;
+	/*line-height:40px;*/
+	color:#fff;
+	}
+#site-info{
+	/*float:left;*/
+	text-align: center;
+	/*margin-left:20px;*/
+	padding-top: 25px;
+	width: 230px;
+	height: 100px;
+}
+
+#page-info {
+	float:right;
+	margin-right:20px;
+	width:40%;
+	text-align:right;
+}
+	
+#content {
+	float:left;
+	text-align:justify;
+	width:55%;
+	font-size: 1.2em;
+	margin:0 20px 40px 40px;
+	min-height:300px;
+	min-width:650px;
+	}
+	
+#poster > div{
+	margin-bottom:70px;
+}
+
+#post-content{
+	margin:0 20px 40px 40px;
+	font-size: 1.2em;
+	margin:0 20px 40px 40px;
+	text-align:justify;
+	padding:10px;
+	float:left;
+	width:55%;
+	-moz-border-radius:5px;
+}
+
+#post-info{
+	padding:5px;
+	border-right:1px solid #ddd;
+	float:left;
+	width:25%;
+	min-width:150px;
+	text-align:right;
+	margin-top:35px;
+	-moz-border-radius:5px;
+}
+
+#sidebar{
+	border-right: 1px solid #FFFF00;
+	float:left;
+	width:220px;
+	padding:10px;
+	min-height:600px;
+	margin-bottom:40px;
+}
+#sidebar > ul{
+	color:#fff;
+	width:100%;
+	list-style-type:none;
+	float:right;
+	display:block;
+	margin:0;
+	padding:0;
+}
+
+#sidebar > ul  > li{
+	width:190px;
+	float:left;
+	margin:10px;
+}
+
+#sidebar > ul  > li >ul{
+	list-style-type:none;
+}
+
+.navigation{
+}
+
+.description{
+	color:#dddccc;
+}
+
+.alignleft{
+	float:left;
+	margin-left:20px;
+}
+
+.alignright{
+	float:right;
+	margin-right:20px;
+}
+
+.footercenter{
+	float:center;
+	margin-right:20px;
+}
+
+.aligncenter{
+	float:none;
+}
+
+.center{
+	background-color: rgba(255, 0, 0, 0.4);
+	padding:7px;
+}
+#footer{
+	background-color: #000;
+	width:100%;
+	height:40px;
+	color:#fff;
+}
+
+/* Begin Form Elements */
+#searchform {
+	
+	margin: 10px auto;
+	padding: 5px 3px;
+	text-align: left;
+	}
+
+#sidebar #searchform #s {
+	margin-left: 20px;
+	width: 130px;
+	padding: 2px;
+	}
+
+#sidebar #searchsubmit {
+	display: none;
+	padding: 1px;
+	}
+
+.entry form { /* This is mainly for password protected posts, makes them look better. */
+	text-align:center;
+	}
+
+select {
+	width: 130px;
+	}
+
+#commentform input {
+	width: 170px;
+	padding: 2px;
+	margin: 5px 5px 1px 0;
+	float: left;
+	}
+
+#commentform {
+	margin: 5px 10px 0 0;
+	float: left;
+	}
+#commentform textarea {
+	font:'Lucida Grande', Verdana, Arial, Sans-Serif;
+	padding: 7px;
+	float: left;
+	}
+
+#respond {
+	margin-top:20px;
+}
+
+#respond:after {
+		content: "."; 
+	    display: block; 
+	    height: 0; 
+	    clear: both; 
+	    visibility: hidden;
+	}
+#commentform #submit {
+	margin: 0 0 5px auto;
+	float: left;
+	}
+/* End Form Elements */
+
+
+
+/* Begin Comments*/
+.comment-area{
+	margin-top:40px;
+}
+
+.comment-area h3{
+	color:#fff;
+}
+#commentform input {
+	font: 0.9em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+
+
+.commentlist li ul li {
+	font-size: 1em;
+}
+
+.commentlist li {
+	font: 0.9em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-weight: bold;
+	color:#fff;
+}
+
+.commentlist li .avatar { 
+	float: right;
+	border: 1px solid #eee;
+	padding: 2px;
+	background: #fff;
+	}
+
+.commentlist cite, .commentlist cite a {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.1em;
+	}
+
+.commentlist p {
+	font-weight: normal;
+	line-height: 1.5em;
+	text-transform: none;
+	}
+
+#commentform p {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+
+.commentmetadata {
+	font-weight: normal;
+	}
+
+.alt {
+	margin: 0;
+	padding: 10px;
+	}
+
+.commentlist {
+	padding: 0;
+	text-align: justify;
+	margin-bottom:30px;
+	}
+
+.odd{
+	border-bottom:1px solid #ccc;
+}
+
+.even{
+	border-bottom:1px solid #ccc;
+}
+
+.commentlist li {
+	margin: 15px 0 10px;
+	padding: 15px;
+	list-style: none;
+
+	}
+.commentlist li ul li { 
+	margin-right: -5px;
+	margin-left: 10px;
+}
+
+.commentlist p {
+	margin: 10px 5px 10px 0;
+}
+.children { padding: 0; }
+
+#commentform p {
+	margin: 5px 0;
+	}
+
+.nocomments {
+	width:72%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	background-color:#fff;
+	-moz-border-radius:5px;
+	}
+
+.commentmetadata {
+	margin: 0;
+	display: block;
+	}
+/* End Comments */
+/*calendar*/
+#wp-calendar  tr  th, #wp-calendar  tr  td  {
+	padding:0 5px;
+	line-height:200%;
+
+}
+
+#wp-calendar  tr  td a:link , #wp-calendar  tr  td a:hover, #wp-calendar  tr  td a:visited, #wp-calendar  tr  td a:active{
+	padding:2px !important;
+
+}
+
+#calendar_wrap table{
+	
+}
+
+.screen-reader-text{
+	display: none;
+}
+
+.footercounter{
+	float:right;
+	margin-right:20px;
+	margin-top: 10px;
+	
+}
+
+abbr,
+acronym {
+	border-bottom:#faa 1px dotted;
+	cursor:help;
+}
+
+#ads {	
+	padding-top:10px;
+	text-align:center;
+}
+/*
+     FILE ARCHIVED ON 21:13:33 Aug 17, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:46:39 Dec 09, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.493
+  exclusion.robots: 0.019
+  exclusion.robots.policy: 0.008
+  esindex: 0.01
+  cdx.remote: 7.322
+  LoadShardBlock: 503.741 (3)
+  PetaboxLoader3.datanode: 534.773 (5)
+  load_resource: 3381.865 (2)
+  PetaboxLoader3.resolve: 3277.663 (2)
+*/
