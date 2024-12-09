@@ -1,12 +1,12 @@
 <script setup>
-
+import { BASE_NAME } from '../config';
 </script>
 
 <template>
 	<div id="header">
 		<div id="site-info">
 			<RouterLink :to="{name: 'home'}" id="title_text" class="font-size-larger">
-				2SQL.RU
+				{{ BASE_NAME }}
 			</RouterLink><br>
 			Информационный ресурс о SQL
 		</div>

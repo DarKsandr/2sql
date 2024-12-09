@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from 'vue-router';
 import SyntaxHighlighterInit from './SyntaxHighlighter.js';
 import { nextTick } from 'vue';
+import { BASE_NAME, BASE_URL } from './config.js';
 
 const routes = [
     { path: '/', name: 'home', component: () => import('./pages/Main.vue') },
@@ -8,11 +9,11 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory(BASE_URL),
     routes,
 });
 
-const DEFAULT_TITLE = '2SQL.ru - Информационный ресурс о языке SQL';
+const DEFAULT_TITLE = `${BASE_NAME} - Информационный ресурс о языке SQL`;
 router.afterEach(async (to, from) => {
     await nextTick();
     document.title = to.meta.title || DEFAULT_TITLE;

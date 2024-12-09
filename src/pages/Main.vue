@@ -1,9 +1,9 @@
 <script setup>
-
+import { BASE_NAME } from '../config';
 </script>
 
 <template>
-    <p style="text-align: center;"><strong>2SQL.ru &#8212; информационный ресурс о SQL, призванный помочь
+    <p style="text-align: center;"><strong>{{ BASE_NAME }} &#8212; информационный ресурс о SQL, призванный помочь
             всем
             желающим разобраться и овладеть этим языком на хорошем уровне. На этом сайте вы сможете найти
             информацию
