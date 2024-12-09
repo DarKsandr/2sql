@@ -1,19 +1,18 @@
 <script setup>
+import { basic, advanced, functions } from '../routes';
+
     const items = [
         {
             title: 'Основы языка SQL', 
-            items: [
-                {name: 'sql-select', text: 'SQL SELECT'},
-                {name: 'sql-insert', text: 'SQL INSERT'},
-            ],
+            items: basic,
         },
         {
             title: 'Дополнительные возможности SQL', 
-            items: [],
+            items: advanced,
         },
         {
             title: 'Функции языка SQL', 
-            items: [],
+            items: functions,
         },
     ];
 </script>
@@ -36,8 +35,8 @@
                 <h2 class="widgettitle">{{ title }}</h2>
                 <div class="menu-osnovy-yazy-ka-sql-container">
                     <ul id="menu-osnovy-yazy-ka-sql" class="menu">
-                        <li v-for="{name, text} in elements" class="menu-item menu-item-type-custom menu-item-object-custom">
-                            <RouterLink :to="{name}">{{ text }}</RouterLink>
+                        <li v-for="{name, meta} in elements" class="menu-item menu-item-type-custom menu-item-object-custom">
+                            <RouterLink :to="{name}">{{ meta.text }}</RouterLink>
                         </li>
                     </ul>
                 </div>
