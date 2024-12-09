@@ -3,12 +3,14 @@
 </script>
 
 <template>
-    <div id="header">
-        <div id="site-info">
-            <RouterLink to="/" id="title_text">2SQL.RU</RouterLink><br>
-            Информационный ресурс о SQL
-        </div>
-    </div>
+	<div id="header">
+		<div id="site-info">
+			<RouterLink to="/" id="title_text" class="font-size-larger">
+				2SQL.RU
+			</RouterLink><br>
+			Информационный ресурс о SQL
+		</div>
+	</div>
 </template>
 
 <style scoped>

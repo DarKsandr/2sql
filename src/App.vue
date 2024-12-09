@@ -51,5 +51,11 @@ import Footer from './components/Footer.vue';
   text-align: justify;
   padding: 10px;
   -moz-border-radius: 5px;
+  width: 55%;
+}
+@media only screen and (max-width: 1400px) {
+  #post-content {
+    width: auto;
+  }
 }
 </style>
