@@ -284,6 +284,13 @@ export const functions = [
             text: 'SQL UCASE()',
         }, component: () => import('./pages/SqlUcase.vue')
     },
+    {
+        path: '/functions/sql-lcase', name: 'sql-lcase', meta: {
+            title: 'Функция SQL LCASE: примеры, синтаксис',
+            h1: 'Функция SQL LCASE()',
+            text: 'SQL LCASE()',
+        }, component: () => import('./pages/SqlLcase.vue')
+    },
 ];
 
 export const routes = [
