@@ -184,6 +184,13 @@ export const advanced = [
             text: 'SQL IN',
         }, component: () => import('./pages/SqlIn.vue')
     },
+    {
+        path: '/advanced/sql-truncate', name: 'sql-truncate', meta: {
+            title: 'Оператор SQL TRUNCATE: синтаксис, примеры',
+            h1: 'Оператор SQL TRUNCATE',
+            text: 'SQL TRUNCATE',
+        }, component: () => import('./pages/SqlTruncate.vue')
+    },
 ];
 export const functions = [];
 
