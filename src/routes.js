@@ -128,6 +128,13 @@ export const advanced = [
             text: 'SQL DROP',
         }, component: () => import('./pages/SqlDrop.vue')
     },
+    {
+        path: '/advanced/sql-alter-table', name: 'sql-alter-table', meta: {
+            title: 'Оператор SQL ALTER TABLE: примеры, синтаксис',
+            h1: 'Оператор SQL ALTER TABLE',
+            text: 'SQL ALTER TABLE',
+        }, component: () => import('./pages/SqlAlterTable.vue')
+    },
 ];
 export const functions = [];
 
