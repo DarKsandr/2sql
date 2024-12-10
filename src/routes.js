@@ -135,6 +135,13 @@ export const advanced = [
             text: 'SQL ALTER TABLE',
         }, component: () => import('./pages/SqlAlterTable.vue')
     },
+    {
+        path: '/advanced/sql-view', name: 'sql-view', meta: {
+            title: 'Оператор SQL VIEW: синтаксис, примеры',
+            h1: 'Оператор SQL VIEW',
+            text: 'SQL VIEW',
+        }, component: () => import('./pages/SqlView.vue')
+    },
 ];
 export const functions = [];
 
