@@ -256,6 +256,13 @@ export const functions = [
             text: 'SQL SUM()',
         }, component: () => import('./pages/SqlSum.vue')
     },
+    {
+        path: '/functions/sql-round', name: 'sql-round', meta: {
+            title: 'Функция SQL ROUND: синтаксис, примеры',
+            h1: 'Функция SQL ROUND()',
+            text: 'SQL ROUND()',
+        }, component: () => import('./pages/SqlRound.vue')
+    },
 ];
 
 export const routes = [
