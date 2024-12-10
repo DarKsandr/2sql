@@ -277,6 +277,13 @@ export const functions = [
             text: 'SQL LAST()',
         }, component: () => import('./pages/SqlLast.vue')
     },
+    {
+        path: '/functions/sql-ucase', name: 'sql-ucase', meta: {
+            title: 'Функция SQL UCASE: синтаксис, примеры',
+            h1: 'Функция SQL UCASE()',
+            text: 'SQL UCASE()',
+        }, component: () => import('./pages/SqlUcase.vue')
+    },
 ];
 
 export const routes = [
