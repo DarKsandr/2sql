@@ -79,6 +79,13 @@ export const advanced = [
             text: 'SQL INNER JOIN',
         }, component: () => import('./pages/SqlInnerJoin.vue')
     },
+    {
+        path: '/advanced/sql-left-join', name: 'sql-left-join', meta: {
+            title: 'Оператор SQL LEFT JOIN: синтаксис, примеры',
+            h1: 'Оператор SQL LEFT JOIN',
+            text: 'SQL LEFT JOIN',
+        }, component: () => import('./pages/SqlLeftJoin.vue')
+    },
 ];
 export const functions = [];
 
