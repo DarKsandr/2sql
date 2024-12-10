@@ -191,6 +191,13 @@ export const advanced = [
             text: 'SQL TRUNCATE',
         }, component: () => import('./pages/SqlTruncate.vue')
     },
+    {
+        path: '/advanced/sql-not', name: 'sql-not', meta: {
+            title: 'Оператор SQL NOT: примеры, синтаксис',
+            h1: 'Оператор SQL NOT',
+            text: 'SQL NOT',
+        }, component: () => import('./pages/SqlNot.vue')
+    },
 ];
 export const functions = [];
 
