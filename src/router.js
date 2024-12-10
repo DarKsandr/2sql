@@ -6,6 +6,12 @@ import { routes } from './routes.js'
  
 const router = createRouter({
     history: createWebHashHistory(BASE_URL),
+    scrollBehavior (to, from, savedPosition) {
+        return {
+            top: 0,
+            behavior: 'smooth',
+        };
+    },
     routes,
 });
 
