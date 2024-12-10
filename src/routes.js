@@ -71,7 +71,15 @@ export const basic = [
     },
 ];
 
-export const advanced = [];
+export const advanced = [
+    {
+        path: '/advanced/sql-inner-join', name: 'sql-inner-join', meta: {
+            title: 'Оператор SQL INNER JOIN: синтаксис, примеры',
+            h1: 'Оператор SQL INNER JOIN',
+            text: 'SQL INNER JOIN',
+        }, component: () => import('./pages/SqlInnerJoin.vue')
+    },
+];
 export const functions = [];
 
 export const routes = [
