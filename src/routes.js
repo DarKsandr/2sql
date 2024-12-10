@@ -177,6 +177,13 @@ export const advanced = [
             text: 'SQL LIMIT',
         }, component: () => import('./pages/SqlLimit.vue')
     },
+    {
+        path: '/advanced/sql-in', name: 'sql-in', meta: {
+            title: 'Оператор SQL IN: примеры, синтаксис',
+            h1: 'Оператор SQL IN',
+            text: 'SQL IN',
+        }, component: () => import('./pages/SqlIn.vue')
+    },
 ];
 export const functions = [];
 
