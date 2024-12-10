@@ -114,6 +114,13 @@ export const advanced = [
             text: 'SQL CREATE',
         }, component: () => import('./pages/SqlCreate.vue')
     },
+    {
+        path: '/advanced/sql-default', name: 'sql-default', meta: {
+            title: 'Оператор SQL DEFAULT: примеры, синтаксис',
+            h1: 'Оператор SQL DEFAULT',
+            text: 'SQL DEFAULT',
+        }, component: () => import('./pages/SqlDefault.vue')
+    },
 ];
 export const functions = [];
 
