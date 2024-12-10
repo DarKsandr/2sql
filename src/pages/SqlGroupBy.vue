@@ -1,5 +1,7 @@
 <script setup>
 
+import SqlHavingLink from "../components/Links/SqlHavingLink.vue";
+import SqlAsLink from "../components/Links/SqlAsLink.vue";
 </script>
 
 <template>
@@ -10,10 +12,7 @@ GROUP BY column_name
 </pre>
     <p>С использованием оператора SQL GROUP BY тесно связано использование <abbr
             title="Функция, возвращающая одно значение от набора значений столбца. Пример: SUM(), MAX(), MIN().">агрегатных
-            функций</abbr> и оператор <a title="Оператор SQL HAVING - примеры использования"
-            href="https://web.archive.org/web/20150418151237/http://2sql.ru/basic/sql-having/" target="_blank">SQL
-            HAVING</a><a href="https://web.archive.org/web/20150418151237/http://2sql.ru/basic/sql-having/"
-            target="_blank"> </a></p>
+            функций</abbr> и оператор <SqlHavingLink /></p>
     <hr />
     <p><strong>Примеры<strong> оператора SQL GROUP BY</strong>. </strong>Имеется следующая <abbr
             title="Singer - Исполнитель; Album - Альбом; Year - Год Выхода; Sale - Число продаж">таблица Artists:</abbr>
@@ -110,9 +109,7 @@ GROUP BY Singer
             </tr>
         </tbody>
     </table>
-    <p>В данном запросе используется оператор <a title="Оператор SQL AS - примеры использования"
-            href="https://web.archive.org/web/20150418151237/http://2sql.ru/advanced/sql-as/" target="_blank">SQL
-            AS</a>, позволяющий задать новое имя столбца AllSales на выходе. В нашем случае это сделано для наглядности.
+    <p>В данном запросе используется оператор <SqlAsLink />, позволяющий задать новое имя столбца AllSales на выходе. В нашем случае это сделано для наглядности.
     </p>
     <p><strong>Пример 2. </strong>Узнать в каком году был выпущен последний альбом каждой из групп используя оператор
         SQL GROUP BY:</p>

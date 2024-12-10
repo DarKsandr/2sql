@@ -1,5 +1,7 @@
 <script setup>
 
+import SqlLimitLink from "../components/Links/SqlLimitLink.vue";
+import SqlTopLink from "../components/Links/SqlTopLink.vue";
 </script>
 
 <template>
@@ -9,7 +11,7 @@
   <pre class="brush: sql; title: ; notranslate" title="">
 FIRST(column_name)
 </pre>
-  <p>Аналогом функции SQL FIRST() для <strong>MySQL</strong> будет оператор <a title="Оператор SQL LIMIT - примеры использования" href="https://web.archive.org/web/20231208195709/http://2sql.ru/advanced/sql-limit/" target="_blank">SQL LIMIT</a>. Для<strong> MS SQL Server</strong> оператор <a title="Оператор SQL TOP - примеры использования" href="https://web.archive.org/web/20231208195709/http://2sql.ru/advanced/sql-top/" target="_blank">SQL TOP</a>. Для <strong>Oracle</strong> оператор ROWNUM.</p>
+  <p>Аналогом функции SQL FIRST() для <strong>MySQL</strong> будет оператор <SqlLimitLink />. Для<strong> MS SQL Server</strong> оператор <SqlTopLink />. Для <strong>Oracle</strong> оператор ROWNUM.</p>
   <p>Примеры аналогов функции SQL FIRST() для различных СУБД описаны ниже.</p>
   <hr/>
   <p><strong>Примеры оператора SQL FIRST. </strong>Имеется следующая <abbr title="ID - Порядковый номер планеты; PlanetName - Название; Radius - Радиус; SunSeason - Период обращения вокруг Солнца; OpeningYear - Год открытия; HavingRings - Имеет или нет кольца; Opener - Первооткрыватель">таблица Planets</abbr>:</p>

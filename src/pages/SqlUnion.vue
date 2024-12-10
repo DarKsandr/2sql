@@ -1,9 +1,10 @@
 <script setup>
 
+import SqlSelectLink from "../components/Links/SqlSelectLink.vue";
 </script>
 
 <template>
-  <p>Оператор SQL UNION используется для объединения двух и более запросов оператора <a title="Оператор SQL SELECT - примеры использования" href="https://web.archive.org/web/20231208195709/http://2sql.ru/basic/sql-select/" target="_blank">SQL SELECT</a>.</p>
+  <p>Оператор SQL UNION используется для объединения двух и более запросов оператора <SqlSelectLink />.</p>
   <p>Оператор SQL UNION имеет следующий синтаксис:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 
@@ -12,7 +13,7 @@ UNION
 SELECT column_name(s) FROM table2
 
 </pre>
-  <p>Важно отметить, что каждый из операторов <a title="Оператор SQL SELECT - примеры использования" href="https://web.archive.org/web/20231208195709/http://2sql.ru/basic/sql-select/" target="_blank">SQL SELECT</a> должен иметь в своем запросе одинаковое количество столбцов и типы возвращаемых данных, иначе произойдет ошибка при формировании результирующей таблицы.</p>
+  <p>Важно отметить, что каждый из операторов <SqlSelectLink /> должен иметь в своем запросе одинаковое количество столбцов и типы возвращаемых данных, иначе произойдет ошибка при формировании результирующей таблицы.</p>
   <hr/>
   <p><strong>Примеры оператора SQL UNION. </strong>Имеется следующая <abbr title="Singer - Исполнитель; Album - Альбом; Year - Год Выхода; Sale - Число продаж">таблица Artists:</abbr></p>
   <table border="1" cellspacing="0">

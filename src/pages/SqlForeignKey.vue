@@ -1,9 +1,10 @@
 <script setup>
 
+import SqlPrimaryKeyLink from "../components/Links/SqlPrimaryKeyLink.vue";
 </script>
 
 <template>
-  <p>Оператор SQL FOREIGN KEY (Внешний ключ) служит для указания в одной таблице на Первичный ключ (оператор <a title="Оператор SQL PRIMARY KEY - примеры использования" href="https://web.archive.org/web/20231208195706/http://2sql.ru/advanced/sql-primary-key/" target="_blank">SQL PRIMARY KEY</a>) в другой.</p>
+  <p>Оператор SQL FOREIGN KEY (Внешний ключ) служит для указания в одной таблице на Первичный ключ (оператор <SqlPrimaryKeyLink />) в другой.</p>
   <p>Оператор SQL FOREIGN KEY имеет следующий синтаксис:</p>
   <p>Для MySQL:</p>
   <pre class="brush: sql; title: ; notranslate" title="">

@@ -1,14 +1,17 @@
 <script setup>
 
+import SqlInnerJoinLink from "../components/Links/SqlInnerJoinLink.vue";
+import SqlLeftJoinLink from "../components/Links/SqlLeftJoinLink.vue";
+import SqlRightJoinLink from "../components/Links/SqlRightJoinLink.vue";
 </script>
 
 <template>
   <p>Оператор SQL FULL JOIN осуществляет формирование таблицы из записей двух или нескольких таблиц. В операторе SQL FULL JOIN не важен порядок следования таблиц, он никак не влияет на окончательный результат, так как оператор является симметричным.</p>
-  <p>Оператор SQL FULL JOIN можно воспринимать как сочетание операторов <a title="Оператор SQL INNER JOIN - примеры использования" href="https://web.archive.org/web/20231208195707/http://2sql.ru/advanced/sql-inner-join/" target="_blank">SQL INNER JOIN</a> + <a title="Оператор SQL LEFT JOIN - примеры использования" href="https://web.archive.org/web/20231208195707/http://2sql.ru/advanced/sql-left-join/" target="_blank">SQL LEFT JOIN</a> + <a title="Оператор SQL RIGHT JOIN - примеры использования" href="https://web.archive.org/web/20231208195707/http://2sql.ru/advanced/sql-right-join/" target="_blank">SQL RIGHT JOIN</a>. Алгоритм его работы следующий:</p>
+  <p>Оператор SQL FULL JOIN можно воспринимать как сочетание операторов <SqlInnerJoinLink /> + <SqlLeftJoinLink /> + <SqlRightJoinLink />. Алгоритм его работы следующий:</p>
   <ol>
-    <li>Сначала формируется таблица на основе внутреннего соединения (оператор <a title="Оператор SQL INNER JOIN - примеры использования" href="https://web.archive.org/web/20231208195707/http://2sql.ru/advanced/sql-inner-join/" target="_blank">SQL INNER JOIN</a>).</li>
-    <li>Затем, в таблицу добавляются значения не вошедшие в результат формирования из правой таблицы (оператор <a title="Оператор SQL LEFT JOIN - примеры использования" href="https://web.archive.org/web/20231208195707/http://2sql.ru/advanced/sql-left-join/" target="_blank">SQL LEFT JOIN</a>). Для них, соответствующие записи из правой таблицы заполняются значениями NULL.</li>
-    <li>Наконец, в таблицу добавляются значения не вошедшие в результат формирования из левой таблицы (оператор <a title="Оператор SQL RIGHT JOIN - примеры использования" href="https://web.archive.org/web/20231208195707/http://2sql.ru/advanced/sql-right-join/" target="_blank">SQL RIGHT JOIN</a>). Для них, соответствующие записи из левой таблицы заполняются значениями NULL.</li>
+    <li>Сначала формируется таблица на основе внутреннего соединения (оператор <SqlInnerJoinLink />).</li>
+    <li>Затем, в таблицу добавляются значения не вошедшие в результат формирования из правой таблицы (оператор <SqlLeftJoinLink />). Для них, соответствующие записи из правой таблицы заполняются значениями NULL.</li>
+    <li>Наконец, в таблицу добавляются значения не вошедшие в результат формирования из левой таблицы (оператор <SqlRightJoinLink />). Для них, соответствующие записи из левой таблицы заполняются значениями NULL.</li>
   </ol>
   <p>Оператор SQL FULL JOIN имеет следующий синтаксис:</p>
   <pre class="brush: sql; title: ; notranslate" title="">

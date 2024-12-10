@@ -1,5 +1,10 @@
 <script setup>
 
+import SqlAndOrLink from "../components/Links/SqlAndOrLink.vue";
+import SqlNotLink from "../components/Links/SqlNotLink.vue";
+import SqlLikeLink from "../components/Links/SqlLikeLink.vue";
+import SqlBetweenLink from "../components/Links/SqlBetweenLink.vue";
+import SqlInLink from "../components/Links/SqlInLink.vue";
 </script>
 
 <template>
@@ -9,19 +14,8 @@
     <pre class="brush: sql; title: ; notranslate" title="">
 WHERE condition
 </pre>
-    <p>Условие (<em>condition</em>) может включать в себя предикаты <a
-            title="Операторы SQL AND &amp; OR - примеры использования"
-            href="https://web.archive.org/web/20150222073855/http://2sql.ru/basic/sql-and-or/" target="_blank">AND,
-            OR</a>, <a title="Оператор SQL NOT - примеры использования"
-            href="https://web.archive.org/web/20150222073855/http://2sql.ru/advanced/sql-not/" target="_blank">NOT</a>,
-        <a title="Оператор SQL LIKE - примеры использования"
-            href="https://web.archive.org/web/20150222073855/http://2sql.ru/advanced/sql-like/"
-            target="_blank">LIKE</a>, <a title="Оператор SQL BETWEEN - примеры использования"
-            href="https://web.archive.org/web/20150222073855/http://2sql.ru/advanced/sql-between/"
-            target="_blank">BETWEEN</a>, <a title="Оператор SQL IS - примеры использования"
-            href="https://web.archive.org/web/20150222073855/http://2sql.ru/advanced/sql-is/" target="_blank">IS</a>, <a
-            title="Оператор SQL IN - примеры использования"
-            href="https://web.archive.org/web/20150222073855/http://2sql.ru/advanced/sql-in/" target="_blank">IN</a>,
+    <p>Условие (<em>condition</em>) может включать в себя предикаты <SqlAndOrLink />, <SqlNotLink />,
+        <SqlLikeLink />, <SqlBetweenLink />, <SqlInLink />,
         ключевое слово NULL, операторы сравнения и равенства (&lt;, &gt;, =).</p>
     <hr />
     <p><strong>Примеры<strong> оператора SQL WHERE</strong>. </strong>Имеется следующая <abbr

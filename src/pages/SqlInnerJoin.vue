@@ -1,5 +1,6 @@
 <script setup>
 
+import SqlForeignKeyLink from "../components/Links/SqlForeignKeyLink.vue";
 </script>
 
 <template>
@@ -66,9 +67,7 @@ ON condition
     </tr>
     </tbody>
   </table>
-  <p>В таблице Books поле BookID являются <a title="Оператор SQL FOREIGN KEY - примеры использования"
-                                             href="https://web.archive.org/web/20231208195710/http://2sql.ru/advanced/sql-foreign-key/"
-                                             target="_blank">внешним ключом</a> и ссылаются на таблицу Authors.</p>
+  <p>В таблице Books поле BookID являются <SqlForeignKeyLink>внешним ключом</SqlForeignKeyLink> и ссылаются на таблицу Authors.</p>
   <p><strong>Пример 1. </strong>Используя оператор SQL INNER JOIN вывести на экран, какими авторами были написаны какие
     из книг:</p>
   <pre class="brush: sql; title: ; notranslate" title="">

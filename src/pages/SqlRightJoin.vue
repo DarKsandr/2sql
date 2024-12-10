@@ -1,11 +1,14 @@
 <script setup>
 
+import SqlRightJoinLink from "../components/Links/SqlRightJoinLink.vue";
+import SqlInnerJoinLink from "../components/Links/SqlInnerJoinLink.vue";
+import SqlLeftJoinLink from "../components/Links/SqlLeftJoinLink.vue";
 </script>
 
 <template>
-  <p>Оператор SQL RIGHT JOIN осуществляет формирование таблицы из записей двух или нескольких таблиц. В операторе <a title="Оператор SQL RIGHT JOIN - примеры использования" href="https://web.archive.org/web/20231208195709/http://2sql.ru/advanced/sql-right-join/">SQL RIGHT JOIN</a>, как и в операторе <a title="Оператор SQL LEFT JOIN - примеры использования" href="https://web.archive.org/web/20231208195709/http://2sql.ru/advanced/sql-left-join/" target="_blank">SQL LEFT JOIN</a>, важен порядок следования таблиц, так как от этого будет зависеть полученный результат. Алгоритм работы оператора следующий:</p>
+  <p>Оператор SQL RIGHT JOIN осуществляет формирование таблицы из записей двух или нескольких таблиц. В операторе <SqlRightJoinLink />, как и в операторе <SqlLeftJoinLink />, важен порядок следования таблиц, так как от этого будет зависеть полученный результат. Алгоритм работы оператора следующий:</p>
   <ol>
-    <li>Сначала происходит формирование таблицы внутренним соединением (оператор <a title="Оператор SQL INNER JOIN - примеры использования" href="https://web.archive.org/web/20231208195709/http://2sql.ru/advanced/sql-inner-join/" target="_blank">SQL INNER JOIN</a>) левой и правой таблиц</li>
+    <li>Сначала происходит формирование таблицы внутренним соединением (оператор <SqlInnerJoinLink />) левой и правой таблиц</li>
     <li>Затем, в результат добавляются записи левой таблицы не вошедшие в результат формирования таблицы внутренним соединением. Для них, соответствующие записи из левой таблицы заполняются значениями NULL.</li>
   </ol>
   <p>Оператор SQL RIGHT JOIN имеет следующий синтаксис:</p>

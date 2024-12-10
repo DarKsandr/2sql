@@ -1,13 +1,12 @@
 <script setup>
 
+import SqlSelectLink from "../components/Links/SqlSelectLink.vue";
 </script>
 
 <template>
     <p>Оператор SQL DISTINCT используется для указания на то, что следует работать только с уникальными значениями
         столбца.<span id="more-399"></span></p>
-    <p>Оператор SQL DISTINCT нашел широкое применение в операторе <a title="Оператор SQL SELECT - примеры использования"
-            href="https://web.archive.org/web/20150423232848/http://2sql.ru/basic/sql-select/" target="_blank">SQL
-            SELECT</a>, для выборки уникальных значений. Так же используется в агрегатных функциях.</p>
+    <p>Оператор SQL DISTINCT нашел широкое применение в операторе <SqlSelectLink />, для выборки уникальных значений. Так же используется в агрегатных функциях.</p>
     <p>Оператор SQL DISTINCT имеет следующий синтаксис:</p>
     <pre class="brush: sql; title: ; notranslate" title="">
 SELECT DISTINCT column_name FROM table_name

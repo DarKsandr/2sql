@@ -1,31 +1,24 @@
 <script setup>
 
+import SqlCountLink from "../components/Links/SqlCountLink.vue";
+import SqlMinLink from "../components/Links/SqlMinLink.vue";
+import SqlMaxLink from "../components/Links/SqlMaxLink.vue";
+import SqlAvgLink from "../components/Links/SqlAvgLink.vue";
+import SqlSumLink from "../components/Links/SqlSumLink.vue";
+import SqlWhereLink from "../components/Links/SqlWhereLink.vue";
+import SqlGroupByLink from "../components/Links/SqlGroupByLink.vue";
 </script>
 
 <template>
     <p>Оператор SQL HAVING является указателем на результат выполнения агрегатных функций. Агрегатной функцией в языке
         SQL называется функция, возвращающая какое-либо одно значение по набору значений столбца. Такими функциями
-        являются: <a title="Функция SQL COUNT() - примеры использования"
-            href="https://web.archive.org/web/20150418151242/http://2sql.ru/functions/sql-count/" target="_blank">SQL
-            COUNT()</a>, <a title="Функция SQL MIN() - примеры использования"
-            href="https://web.archive.org/web/20150418151242/http://2sql.ru/functions/sql-min/" target="_blank">SQL
-            MIN()</a>, <a title="Функция SQL MAX() - примеры использования"
-            href="https://web.archive.org/web/20150418151242/http://2sql.ru/functions/sql-max/" target="_blank">SQL
-            MAX()</a>, <a title="Функция SQL AVG() - примеры использования"
-            href="https://web.archive.org/web/20150418151242/http://2sql.ru/functions/sql-avg/" target="_blank">SQL
-            AVG()</a>, <a title="Функция SQL SUM() - примеры использования"
-            href="https://web.archive.org/web/20150418151242/http://2sql.ru/functions/sql-sum/" target="_blank">SQL
-            SUM()</a>.</p>
+        являются: <SqlCountLink />, <SqlMinLink />, <SqlMaxLink />, <SqlAvgLink />, <SqlSumLink />.</p>
     <p>Оператор SQL HAVING имеет следующий синтаксис:</p>
     <pre class="brush: sql; title: ; notranslate" title="">
 HAVING aggregate_function(column_name) operator value
 </pre>
-    <p>Оператор SQL HAVING аналогичен оператору <a title="Оператор SQL WHERE - примеры использования"
-            href="https://web.archive.org/web/20150418151242/http://2sql.ru/basic/sql-where/" target="_blank">SQL
-            WHERE</a> за тем исключением, что применяется не для всего набора столбцов таблицы, а для набора созданного
-        оператором <a title="Оператор SQL GROUP BY - примеры использования"
-            href="https://web.archive.org/web/20150418151242/http://2sql.ru/basic/sql-group-by/" target="_blank">SQL
-            GROUP BY</a> и применяется всегда строго после него.</p>
+    <p>Оператор SQL HAVING аналогичен оператору <SqlWhereLink /> за тем исключением, что применяется не для всего набора столбцов таблицы, а для набора созданного
+        оператором <SqlGroupByLink /> и применяется всегда строго после него.</p>
     <hr />
     <p><strong>Примеры <strong>оператора SQL HAVING</strong>. </strong>Имеется следующая <abbr
             title="Singer - Исполнитель; Album - Альбом; Year - Год Выхода; Sale - Число продаж">таблица Artists:</abbr>

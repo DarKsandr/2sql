@@ -1,5 +1,6 @@
 <script setup>
 
+import SqlCreateLink from "../components/Links/SqlCreateLink.vue";
 </script>
 
 <template>
@@ -20,7 +21,7 @@ Id int NOT NULL PRIMARY KEY
 )
 </pre>
   <hr/>
-  <p><strong>Примеры оператора SQL PRIMARY KEY. </strong>Используя оператор SQL PRIMARY KEY, по аналогии с примером 1 оператора <a title="Оператор SQL CREATE - примеры использования" href="https://web.archive.org/web/20231208195707/http://2sql.ru/advanced/sql-create/" target="_blank">SQL CREATE</a> создать таблицу Planets с Первичным ключом ID:</p>
+  <p><strong>Примеры оператора SQL PRIMARY KEY. </strong>Используя оператор SQL PRIMARY KEY, по аналогии с примером 1 оператора <SqlCreateLink /> создать таблицу Planets с Первичным ключом ID:</p>
   <p>Решение для <strong>MySQL</strong>:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 CREATE TABLE Planets (

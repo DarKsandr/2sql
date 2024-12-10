@@ -1,5 +1,8 @@
 <script setup>
 
+import SqlWhereLink from "../components/Links/SqlWhereLink.vue";
+import SqlTruncateLink from "../components/Links/SqlTruncateLink.vue";
+import SqlAndOrLink from "../components/Links/SqlAndOrLink.vue";
 </script>
 
 <template>
@@ -9,12 +12,8 @@
 DELETE FROM table_name WHERE condition
 </pre>
     <p>Условием (<em>condition</em>) задается критерий для удаления той или иной строки. Следует очень внимательно
-        относиться к условию оператора <a title="Оператор SQL WHERE - примеры использования"
-            href="https://web.archive.org/web/20150225113025/http://2sql.ru/basic/sql-where/" target="_blank">SQL
-            WHERE</a> в операторе SQL DELETE, так как если оно не будет задано вообще, то будут удалены все строки
-        таблицы! Аналогом оператора является оператор <a title="Оператор SQL TRUNCATE - примеры использования"
-            href="https://web.archive.org/web/20150225113025/http://2sql.ru/advanced/sql-truncate/" target="_blank">SQL
-            TRUNCATE</a>, который удаляет все записи в таблице.</p>
+        относиться к условию оператора <SqlWhereLink /> в операторе SQL DELETE, так как если оно не будет задано вообще, то будут удалены все строки
+        таблицы! Аналогом оператора является оператор <SqlTruncateLink />, который удаляет все записи в таблице.</p>
     <hr />
     <p><strong>Примеры<strong> оператора SQL DELETE</strong>. </strong>Имеется следующая <abbr
             title="ID - Порядковый номер планеты; PlanetName - Название; Radius - Радиус; SunSeason - Период обращения вокруг Солнца; OpeningYear - Год открытия; HavingRings - Имеет или нет кольца; Opener - Первооткрыватель">таблица
@@ -84,12 +83,8 @@ DELETE FROM Planets
 WHERE HavingRings = 'No'
 AND SunSeason &gt; 200
 </pre>
-    <p>В данном запросе присутствует оператор <a title="Операторы SQL AND &amp; OR - примеры использования"
-            href="https://web.archive.org/web/20150225113025/http://2sql.ru/basic/sql-and-or/" target="_blank">SQL
-            AND</a>. Он является логическим умножением и служит для объединения условий. Так, в случае не выполнения
-        хотя бы одного из двух условий, все условие оператора <a title="Оператор SQL WHERE - примеры использования"
-            href="https://web.archive.org/web/20150225113025/http://2sql.ru/basic/sql-where/" target="_blank">SQL
-            WHERE</a> в операторе SQL DELETE будет считаться невыполненным.</p>
+  <p>В данном запросе присутствует оператор <SqlAndOrLink>SQL AND</SqlAndOrLink>. Он является логическим умножением и служит для объединения условий. Так, в случае не выполнения
+        хотя бы одного из двух условий, все условие оператора <SqlWhereLink /> в операторе SQL DELETE будет считаться невыполненным.</p>
     <p>Выполним проверку:</p>
     <pre class="brush: sql; title: ; notranslate" title="">
 SELECT *
@@ -136,8 +131,5 @@ FROM Planets
             </tr>
         </tbody>
     </table>
-    <p>В таблице осталась запись под ID = 4, так как она не выполняет условия оператора <a
-            title="Оператор SQL WHERE - примеры использования"
-            href="https://web.archive.org/web/20150225113025/http://2sql.ru/basic/sql-where/" target="_blank">SQL
-            WHERE</a>: период обращения вокруг Солнца (SunSeason) в ней не больше 200.</p>
+    <p>В таблице осталась запись под ID = 4, так как она не выполняет условия оператора <SqlWhereLink />: период обращения вокруг Солнца (SunSeason) в ней не больше 200.</p>
 </template>

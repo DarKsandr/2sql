@@ -1,5 +1,6 @@
 <script setup>
 
+import SqlWhereLink from "../components/Links/SqlWhereLink.vue";
 </script>
 
 <template>
@@ -142,7 +143,7 @@ WHERE Students BETWEEN 10000 AND 30000
     </tr>
     </tbody>
   </table>
-  <p>Данный пример можно так же записать и с помощью операторов сравнения (&lt;,&gt;,=) и оператора <a title="Оператор SQL WHERE - примеры использования" href="https://web.archive.org/web/20231208195705/http://2sql.ru/basic/sql-where/" target="_blank">SQL WHERE</a>. Так, нижеприведенный код будет выведет точно такой же результат:</p>
+  <p>Данный пример можно так же записать и с помощью операторов сравнения (&lt;,&gt;,=) и оператора <SqlWhereLink />. Так, нижеприведенный код будет выведет точно такой же результат:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT *
 FROM Universities

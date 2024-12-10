@@ -1,10 +1,12 @@
 <script setup>
 
+import SqlOrderByLink from "../components/Links/SqlOrderByLink.vue";
+import SqlLimitLink from "../components/Links/SqlLimitLink.vue";
 </script>
 
 <template>
-  <p>Оператор SQL TOP позволяет ограничить выборку числа записей до заданного числа. При использовании оператора SQL TOP совместно с оператором <a title="Оператор SQL ORDER BY - примеры использования" href="https://web.archive.org/web/20231208195711/http://2sql.ru/basic/sql-order-by/" target="_blank">SQL ORDER BY</a>, на вывод пойдет первые N записей отсортированного списка, в противном случае, выведутся первые N строк таблицы.</p>
-  <p>Используется только в СУБД <strong>MS SQL Server</strong>! Аналогом в <strong>MySQL</strong> является оператор <a title="Оператор SQL LIMIT - примеры использования" href="https://web.archive.org/web/20231208195711/http://2sql.ru/advanced/sql-limit/" target="_blank">SQL LIMIT</a>.</p>
+  <p>Оператор SQL TOP позволяет ограничить выборку числа записей до заданного числа. При использовании оператора SQL TOP совместно с оператором <SqlOrderByLink />, на вывод пойдет первые N записей отсортированного списка, в противном случае, выведутся первые N строк таблицы.</p>
+  <p>Используется только в СУБД <strong>MS SQL Server</strong>! Аналогом в <strong>MySQL</strong> является оператор <SqlLimitLink />.</p>
   <p>Оператор SQL TOP имеет следующий синтаксис:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 

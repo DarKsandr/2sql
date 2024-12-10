@@ -1,11 +1,13 @@
 <script setup>
 
+import SqlRightJoinLink from "../components/Links/SqlRightJoinLink.vue";
+import SqlInnerJoinLink from "../components/Links/SqlInnerJoinLink.vue";
 </script>
 
 <template>
-  <p>Оператор SQL LEFT JOIN осуществляет формирование таблицы из записей двух или нескольких таблиц. В операторе SQL LEFT JOIN, как и в операторе <a title="Оператор SQL RIGHT JOIN - примеры использования" href="https://web.archive.org/web/20231208195711/http://2sql.ru/advanced/sql-right-join/" target="_blank">SQL RIGHT JOIN</a>, важен порядок следования таблиц, так как от этого будет зависеть полученный результат. Алгоритм работы оператора следующий:</p>
+  <p>Оператор SQL LEFT JOIN осуществляет формирование таблицы из записей двух или нескольких таблиц. В операторе SQL LEFT JOIN, как и в операторе <SqlRightJoinLink />, важен порядок следования таблиц, так как от этого будет зависеть полученный результат. Алгоритм работы оператора следующий:</p>
   <ol>
-    <li>Сначала происходит формирование таблицы внутренним соединением (оператор <a title="Оператор SQL INNER JOIN - примеры использования" href="https://web.archive.org/web/20231208195711/http://2sql.ru/advanced/sql-inner-join/" target="_blank">SQL INNER JOIN</a>) левой и правой таблиц</li>
+    <li>Сначала происходит формирование таблицы внутренним соединением (оператор <SqlInnerJoinLink />) левой и правой таблиц</li>
     <li>Затем, в результат добавляются записи левой таблицы не вошедшие в результат формирования таблицы внутренним соединением. Для них, соответствующие записи из правой таблицы заполняются значениями NULL.</li>
   </ol>
   <p>Оператор SQL LEFT JOIN имеет следующий синтаксис:</p>

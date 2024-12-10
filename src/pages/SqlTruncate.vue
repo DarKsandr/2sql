@@ -1,9 +1,10 @@
 <script setup>
-
+import SqlDeleteLink from "../components/Links/SqlDeleteLink.vue";
+import SqlWhereLink from "../components/Links/SqlWhereLink.vue";
 </script>
 
 <template>
-  <p>Оператор SQL TRUNCATE служит для очистки таблицы от всех данных. Оператор SQL TRUNCATE аналогичен оператору <a title="Оператор SQL DELETE - примеры использования" href="https://web.archive.org/web/20231208195707/http://2sql.ru/basic/sql-delete/" target="_blank">SQL DELETE</a> применяемом без оператора <a title="Оператор SQL WHERE - примеры использования" href="https://web.archive.org/web/20231208195707/http://2sql.ru/basic/sql-where/" target="_blank">SQL WHERE</a>. Основные отличия:</p>
+  <p>Оператор SQL TRUNCATE служит для очистки таблицы от всех данных. Оператор SQL TRUNCATE аналогичен оператору <SqlDeleteLink /> применяемом без оператора <SqlWhereLink />. Основные отличия:</p>
   <ul>
     <li>Оператор SQL TRUNCATE не ведет запись об удаленных данных в журнал событий.</li>
     <li>SQL DELETE осуществляет блокировку построчно, оператор SQL TRUNCATE по всей странице целиком. Вследствие этого, оператор SQL TRUNCATE не возвращает никакого значения, SQL DELETE же, возвращает количество удаленных строк.</li>
@@ -86,7 +87,7 @@ TRUNCATE TABLE Table_name
 TRUNCATE TABLE Artists
 
 </pre>
-  <p>Как было сказано выше, аналогичную задачу можно решить оператором SQL DELETE без использования оператора <a title="Оператор SQL WHERE - примеры использования" href="https://web.archive.org/web/20231208195707/http://2sql.ru/basic/sql-where/" target="_blank">SQL WHERE</a>:</p>
+  <p>Как было сказано выше, аналогичную задачу можно решить оператором SQL DELETE без использования оператора <SqlWhereLink />:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 
 DELETE FROM Artists

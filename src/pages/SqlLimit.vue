@@ -1,10 +1,11 @@
 <script setup>
 
+import SqlTopLink from "../components/Links/SqlTopLink.vue";
 </script>
 
 <template>
   <p>Оператор SQL LIMIT позволяет вывести указанное число строк из таблицы. Оператор SQL LIMIT записывается всегда в конце запроса.</p>
-  <p>Используется в СУБД <strong>MySQL</strong>. Аналогом в <strong>MS SQL Server</strong> является оператор <a title="Оператор SQL TOP - примеры использования" href="https://web.archive.org/web/20231208195706/http://2sql.ru/advanced/sql-top/" target="_blank">SQL TOP</a>.</p>
+  <p>Используется в СУБД <strong>MySQL</strong>. Аналогом в <strong>MS SQL Server</strong> является оператор <SqlTopLink />.</p>
   <p>Оператор LIMIT имеет следующий синтаксис:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 LIMIT first_row [, last_row]

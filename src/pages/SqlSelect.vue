@@ -1,5 +1,9 @@
 <script setup>
 
+import SqlWhereLink from "../components/Links/SqlWhereLink.vue";
+import SqlGroupByLink from "../components/Links/SqlGroupByLink.vue";
+import SqlHavingLink from "../components/Links/SqlHavingLink.vue";
+import SqlOrderByLink from "../components/Links/SqlOrderByLink.vue";
 </script>
 
 <template>
@@ -19,18 +23,7 @@ ORDER BY expression]
     <p>Необязательные операторы обрамлены квадратными скобками [].</p>
     <p>В параметре column_list указываются названия столбцов таблицы, которые необходимо вывести, либо символ “*”,
         позволяющий вывести все столбцы таблицы. Ключевым словом FROM задается название таблицы или таблиц, из которых
-        следует брать столбцы. Оператор <a title="Оператор SQL WHERE - примеры использования"
-            href="https://web.archive.org/web/20231208195710/http://2sql.ru/basic/sql-where/" target="_blank">SQL
-            WHERE</a> задает дополнительные условия выборки. Оператор <a
-            title="Оператор SQL GROUP BY - примеры использования"
-            href="https://web.archive.org/web/20231208195710/http://2sql.ru/basic/sql-group-by/" target="_blank">SQL
-            GROUP BY</a> используют для группирования результата по столбцу или по нескольким столбцам. Оператор <a
-            title="Оператор SQL HAVING - примеры использования"
-            href="https://web.archive.org/web/20231208195710/http://2sql.ru/basic/sql-having/" target="_blank">SQL
-            HAVING</a> включают в запрос для задания условия агрегатных функций. Наконец, оператор <a
-            title="Оператор SQL ORDER BY - примеры использования"
-            href="https://web.archive.org/web/20231208195710/http://2sql.ru/basic/sql-order-by/" target="_blank">SQL
-            ORDER BY</a> используется для сортировки значений.</p>
+        следует брать столбцы. Оператор <SqlWhereLink /> задает дополнительные условия выборки. Оператор <SqlGroupByLink /> используют для группирования результата по столбцу или по нескольким столбцам. Оператор <SqlHavingLink /> включают в запрос для задания условия агрегатных функций. Наконец, оператор <SqlOrderByLink /> используется для сортировки значений.</p>
     <hr />
     <p><strong>Примеры оператора SQL SELECT. </strong>Имеется следующая <abbr
             title="ID - Порядковый номер планеты; PlanetName - Название; Radius - Радиус; SunSeason - Период обращения вокруг Солнца; OpeningYear - Год открытия; HavingRings - Имеет или нет кольца; Opener - Первооткрыватель">таблица

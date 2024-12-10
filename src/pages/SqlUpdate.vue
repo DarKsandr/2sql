@@ -1,5 +1,6 @@
 <script setup>
 import SqlSelectLink from '../components/Links/SqlSelectLink.vue';
+import SqlWhereLink from "../components/Links/SqlWhereLink.vue";
 
 </script>
 
@@ -12,9 +13,7 @@ UPDATE table_name SET expression [WHERE condition]
     <p>Напоминаю, что записи в квадратных скобках [] являются необязательными.</p>
     <p>После ключевого слова SET должен идти список столбцов таблицы, которые следует изменить, и новые значения в
         формате Имя_столбца = значение.</p>
-    <p>Дополнительное условие, описываемое в операторе <a title="Оператор SQL WHERE - примеры использования"
-            href="https://web.archive.org/web/20231208195704/http://2sql.ru/basic/sql-where/" target="_blank">SQL
-            WHERE</a>, помогает более гибко совершать манипуляции данными.</p>
+    <p>Дополнительное условие, описываемое в операторе <SqlWhereLink />, помогает более гибко совершать манипуляции данными.</p>
     <hr />
     <p><strong>Примеры<strong> оператора SQL UPDATE</strong>. </strong>Имеется следующая <abbr
             title="ID - Порядковый номер планеты; PlanetName - Название; Radius - Радиус; SunSeason - Период обращения вокруг Солнца; OpeningYear - Год открытия; HavingRings - Имеет или нет кольца; Opener - Первооткрыватель">таблица
@@ -83,9 +82,7 @@ UPDATE Planets
 SET PlanetName = 'Pluton'
 WHERE ID = 3
 </pre>
-    <p>В этом примере условие оператора <a title="Оператор SQL WHERE - примеры использования"
-            href="https://web.archive.org/web/20231208195704/http://2sql.ru/basic/sql-where/" target="_blank">SQL
-            WHERE</a> является обязательным, так как без него все поля столбца PlanetName во всей таблице изменились бы
+    <p>В этом примере условие оператора <SqlWhereLink /> является обязательным, так как без него все поля столбца PlanetName во всей таблице изменились бы
         на Pluton. В данном случае, нам приходит на помощь столбец ID, ибо он является Первичным ключом, позволяющим
         однозначно идентифицировать запись.</p>
     <p>Выполним запрос оператором <SqlSelectLink />, чтобы посмотреть изменения в записи:</p>

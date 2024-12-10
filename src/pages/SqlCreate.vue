@@ -1,9 +1,10 @@
 <script setup>
 
+import SqlViewLink from "../components/Links/SqlViewLink.vue";
 </script>
 
 <template>
-  <p>Оператор SQL CREATE служит для создания объектов базы данных. Разные СУБД работают с разными объектами, но наиболее общими для большинства СУБД будут команды создания таблицы (оператор SQL CREATE TABLE) и создания представления (оператор <a title="Оператор SQL VIEW - примеры использования" href="https://web.archive.org/web/20231208195712/http://2sql.ru/advanced/sql-view/" target="_blank">SQL CREATE VIEW</a>).</p>
+  <p>Оператор SQL CREATE служит для создания объектов базы данных. Разные СУБД работают с разными объектами, но наиболее общими для большинства СУБД будут команды создания таблицы (оператор SQL CREATE TABLE) и создания представления (оператор <SqlViewLink />).</p>
   <p>Синтаксис оператора SQL CREATE TABLE выглядит следующим образом:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 CREATE TABLE  table_name (
