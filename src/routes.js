@@ -86,6 +86,13 @@ export const advanced = [
             text: 'SQL LEFT JOIN',
         }, component: () => import('./pages/SqlLeftJoin.vue')
     },
+    {
+        path: '/advanced/sql-right-join', name: 'sql-right-join', meta: {
+            title: 'Оператор SQL RIGHT JOIN: примеры, синтаксис',
+            h1: 'Оператор SQL RIGHT JOIN',
+            text: 'SQL RIGHT JOIN',
+        }, component: () => import('./pages/SqlRightJoin.vue')
+    },
 ];
 export const functions = [];
 
