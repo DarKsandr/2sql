@@ -305,6 +305,13 @@ export const functions = [
             text: 'SQL MID()',
         }, component: () => import('./pages/SqlMid.vue')
     },
+    {
+        path: '/functions/sql-now', name: 'sql-now', meta: {
+            title: 'Функция SQL NOW: примеры, синтаксис',
+            h1: 'Функция SQL NOW()',
+            text: 'SQL NOW()',
+        }, component: () => import('./pages/SqlNow.vue')
+    },
 ];
 
 export const routes = [
