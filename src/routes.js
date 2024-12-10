@@ -198,6 +198,13 @@ export const advanced = [
             text: 'SQL NOT',
         }, component: () => import('./pages/SqlNot.vue')
     },
+    {
+        path: '/advanced/sql-like', name: 'sql-like', meta: {
+            title: 'Оператор SQL LIKE: синтаксис, примеры',
+            h1: 'Оператор SQL LIKE',
+            text: 'SQL LIKE',
+        }, component: () => import('./pages/SqlLike.vue')
+    },
 ];
 export const functions = [];
 
