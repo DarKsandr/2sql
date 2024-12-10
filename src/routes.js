@@ -298,6 +298,13 @@ export const functions = [
             text: 'SQL LEN()',
         }, component: () => import('./pages/SqlLen.vue')
     },
+    {
+        path: '/functions/sql-mid', name: 'sql-mid', meta: {
+            title: 'Функция SQL MID: примеры, синтаксис',
+            h1: 'Функция SQL MID()',
+            text: 'SQL MID()',
+        }, component: () => import('./pages/SqlMid.vue')
+    },
 ];
 
 export const routes = [
