@@ -237,10 +237,17 @@ export const functions = [
     },
     {
         path: '/functions/sql-min', name: 'sql-min', meta: {
-            title: 'Функция SQL MIN: синатксис, примеры',
+            title: 'Функция SQL MIN: синтаксис, примеры',
             h1: 'Функция SQL MIN()',
             text: 'SQL MIN()',
         }, component: () => import('./pages/SqlMin.vue')
+    },
+    {
+        path: '/functions/sql-max', name: 'sql-max', meta: {
+            title: 'Функция SQL MAX: синтаксис, примеры',
+            h1: 'Функция SQL MAX()',
+            text: 'SQL MAX()',
+        }, component: () => import('./pages/SqlMax.vue')
     },
 ];
 
