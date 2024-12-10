@@ -220,7 +220,15 @@ export const advanced = [
         }, component: () => import('./pages/SqlBetween.vue')
     },
 ];
-export const functions = [];
+export const functions = [
+    {
+        path: '/functions/sql-count', name: 'sql-count', meta: {
+            title: 'Функция SQL COUNT: примеры, синтаксис',
+            h1: 'Функция SQL COUNT()',
+            text: 'SQL COUNT()',
+        }, component: () => import('./pages/SqlCount.vue')
+    },
+];
 
 export const routes = [
     { path: '/', name: 'home', component: () => import('./pages/Main.vue') },
