@@ -228,6 +228,13 @@ export const functions = [
             text: 'SQL COUNT()',
         }, component: () => import('./pages/SqlCount.vue')
     },
+    {
+        path: '/functions/sql-avg', name: 'sql-avg', meta: {
+            title: 'Функция SQL AVG: синтаксис, примеры',
+            h1: 'Функция SQL AVG()',
+            text: 'SQL AVG()',
+        }, component: () => import('./pages/SqlAvg.vue')
+    },
 ];
 
 export const routes = [
