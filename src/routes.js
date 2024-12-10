@@ -121,6 +121,13 @@ export const advanced = [
             text: 'SQL DEFAULT',
         }, component: () => import('./pages/SqlDefault.vue')
     },
+    {
+        path: '/advanced/sql-drop', name: 'sql-drop', meta: {
+            title: 'Оператор SQL DROP: примеры использования, синтаксис',
+            h1: 'Оператор SQL DROP',
+            text: 'SQL DROP',
+        }, component: () => import('./pages/SqlDrop.vue')
+    },
 ];
 export const functions = [];
 
