@@ -235,6 +235,13 @@ export const functions = [
             text: 'SQL AVG()',
         }, component: () => import('./pages/SqlAvg.vue')
     },
+    {
+        path: '/functions/sql-min', name: 'sql-min', meta: {
+            title: 'Функция SQL MIN: синатксис, примеры',
+            h1: 'Функция SQL MIN()',
+            text: 'SQL MIN()',
+        }, component: () => import('./pages/SqlMin.vue')
+    },
 ];
 
 export const routes = [
