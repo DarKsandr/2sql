@@ -249,6 +249,13 @@ export const functions = [
             text: 'SQL MAX()',
         }, component: () => import('./pages/SqlMax.vue')
     },
+    {
+        path: '/functions/sql-sum', name: 'sql-sum', meta: {
+            title: 'Функция SQL SUM: синтаксис, синтаксис',
+            h1: 'Функция SQL SUM()',
+            text: 'SQL SUM()',
+        }, component: () => import('./pages/SqlSum.vue')
+    },
 ];
 
 export const routes = [
