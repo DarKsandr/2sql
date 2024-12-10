@@ -93,6 +93,13 @@ export const advanced = [
             text: 'SQL RIGHT JOIN',
         }, component: () => import('./pages/SqlRightJoin.vue')
     },
+    {
+        path: '/advanced/sql-full-join', name: 'sql-full-join', meta: {
+            title: 'Оператор SQL FULL JOIN: синтаксис, примеры',
+            h1: 'Оператор SQL FULL JOIN',
+            text: 'SQL FULL JOIN',
+        }, component: () => import('./pages/SqlFullJoin.vue')
+    },
 ];
 export const functions = [];
 
