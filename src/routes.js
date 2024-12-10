@@ -170,6 +170,13 @@ export const advanced = [
             text: 'SQL TOP',
         }, component: () => import('./pages/SqlTop.vue')
     },
+    {
+        path: '/advanced/sql-limit', name: 'sql-limit', meta: {
+            title: 'Оператор SQL LIMIT: синтаксис, примеры',
+            h1: 'Оператор SQL LIMIT',
+            text: 'SQL LIMIT',
+        }, component: () => import('./pages/SqlLimit.vue')
+    },
 ];
 export const functions = [];
 
