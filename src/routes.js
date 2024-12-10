@@ -205,6 +205,13 @@ export const advanced = [
             text: 'SQL LIKE',
         }, component: () => import('./pages/SqlLike.vue')
     },
+    {
+        path: '/advanced/sql-as', name: 'sql-as', meta: {
+            title: 'Оператор SQL AS: синтаксис, примеры',
+            h1: 'Оператор SQL AS',
+            text: 'SQL AS',
+        }, component: () => import('./pages/SqlAs.vue')
+    },
 ];
 export const functions = [];
 
