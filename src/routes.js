@@ -212,6 +212,13 @@ export const advanced = [
             text: 'SQL AS',
         }, component: () => import('./pages/SqlAs.vue')
     },
+    {
+        path: '/advanced/sql-between', name: 'sql-between', meta: {
+            title: 'Оператор SQL BETWEEN: синтаксис, примеры',
+            h1: 'Оператор SQL BETWEEN',
+            text: 'SQL BETWEEN',
+        }, component: () => import('./pages/SqlBetween.vue')
+    },
 ];
 export const functions = [];
 
