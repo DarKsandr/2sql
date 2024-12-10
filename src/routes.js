@@ -163,6 +163,13 @@ export const advanced = [
             text: 'SQL UNION',
         }, component: () => import('./pages/SqlUnion.vue')
     },
+    {
+        path: '/advanced/sql-top', name: 'sql-top', meta: {
+            title: 'Оператор SQL TOP: примеры, синтаксис',
+            h1: 'Оператор SQL TOP',
+            text: 'SQL TOP',
+        }, component: () => import('./pages/SqlTop.vue')
+    },
 ];
 export const functions = [];
 
