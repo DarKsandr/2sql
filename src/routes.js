@@ -156,6 +156,13 @@ export const advanced = [
             text: 'SQL FOREIGN KEY',
         }, component: () => import('./pages/SqlForeignKey.vue')
     },
+    {
+        path: '/advanced/sql-union', name: 'sql-union', meta: {
+            title: 'Оператор SQL UNION: синтаксис, примеры использования',
+            h1: 'Оператор SQL UNION',
+            text: 'SQL UNION',
+        }, component: () => import('./pages/SqlUnion.vue')
+    },
 ];
 export const functions = [];
 
