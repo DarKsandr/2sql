@@ -263,6 +263,13 @@ export const functions = [
             text: 'SQL ROUND()',
         }, component: () => import('./pages/SqlRound.vue')
     },
+    {
+        path: '/functions/sql-first', name: 'sql-first', meta: {
+            title: 'Функция SQL FIRST: примеры, синтаксис',
+            h1: 'Функция SQL FIRST()',
+            text: 'SQL FIRST()',
+        }, component: () => import('./pages/SqlFirst.vue')
+    },
 ];
 
 export const routes = [
