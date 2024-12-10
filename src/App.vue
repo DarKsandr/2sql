@@ -24,6 +24,7 @@ import Footer from './components/Footer.vue';
 #page {
 	text-align: left;
 	width: 100%;
+  min-width: 1100px;
 	background: url(/src/images/bg1.png);
 	background-attachment: fixed;
 	padding: 0;
