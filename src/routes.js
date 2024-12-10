@@ -107,6 +107,13 @@ export const advanced = [
             text: 'SQL CROSS JOIN',
         }, component: () => import('./pages/SqlCrossJoin.vue')
     },
+    {
+        path: '/advanced/sql-create', name: 'sql-create', meta: {
+            title: 'Оператор SQL CREATE: примеры, синтаксис',
+            h1: 'Оператор SQL CREATE',
+            text: 'SQL CREATE',
+        }, component: () => import('./pages/SqlCreate.vue')
+    },
 ];
 export const functions = [];
 
