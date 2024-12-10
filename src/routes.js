@@ -149,6 +149,13 @@ export const advanced = [
             text: 'SQL PRIMARY KEY',
         }, component: () => import('./pages/SqlPrimaryKey.vue')
     },
+    {
+        path: '/advanced/sql-foreign-key', name: 'sql-foreign-key', meta: {
+            title: 'Оператор SQL FOREIGN KEY: синтаксис, примеры использования',
+            h1: 'Оператор SQL FOREIGN KEY',
+            text: 'SQL FOREIGN KEY',
+        }, component: () => import('./pages/SqlForeignKey.vue')
+    },
 ];
 export const functions = [];
 
