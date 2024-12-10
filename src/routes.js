@@ -142,6 +142,13 @@ export const advanced = [
             text: 'SQL VIEW',
         }, component: () => import('./pages/SqlView.vue')
     },
+    {
+        path: '/advanced/sql-primary-key', name: 'sql-primary-key', meta: {
+            title: 'Оператор SQL PRIMARY KEY: примеры, синтаксис',
+            h1: 'Оператор SQL PRIMARY KEY',
+            text: 'SQL PRIMARY KEY',
+        }, component: () => import('./pages/SqlPrimaryKey.vue')
+    },
 ];
 export const functions = [];
 
