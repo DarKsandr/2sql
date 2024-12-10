@@ -291,6 +291,13 @@ export const functions = [
             text: 'SQL LCASE()',
         }, component: () => import('./pages/SqlLcase.vue')
     },
+    {
+        path: '/functions/sql-len', name: 'sql-len', meta: {
+            title: 'Функция SQL LEN: синтаксис, примеры',
+            h1: 'Функция SQL LEN()',
+            text: 'SQL LEN()',
+        }, component: () => import('./pages/SqlLen.vue')
+    },
 ];
 
 export const routes = [
