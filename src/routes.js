@@ -270,6 +270,13 @@ export const functions = [
             text: 'SQL FIRST()',
         }, component: () => import('./pages/SqlFirst.vue')
     },
+    {
+        path: '/functions/sql-last', name: 'sql-last', meta: {
+            title: 'Функция SQL LAST: примеры, синтаксис',
+            h1: 'Функция SQL LAST()',
+            text: 'SQL LAST()',
+        }, component: () => import('./pages/SqlLast.vue')
+    },
 ];
 
 export const routes = [
