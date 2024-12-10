@@ -1,0 +1,16 @@
+services:
+  node:
+    image: node:23
+    container_name: 2sql_node
+    working_dir: /var/www/2sql/site
+    volumes:
+      - .:/var/www/2sql/site
+    ports:
+      - ${VITE_PORT}:${VITE_PORT}
+    tty: true
+    networks:
+      - common
+
+networks:
+  common:
+    external: true
