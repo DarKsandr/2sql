@@ -100,6 +100,13 @@ export const advanced = [
             text: 'SQL FULL JOIN',
         }, component: () => import('./pages/SqlFullJoin.vue')
     },
+    {
+        path: '/advanced/sql-cross-join', name: 'sql-cross-join', meta: {
+            title: 'Оператор SQL CROSS JOIN: примеры, синтаксис',
+            h1: 'Оператор SQL CROSS JOIN',
+            text: 'SQL CROSS JOIN',
+        }, component: () => import('./pages/SqlCrossJoin.vue')
+    },
 ];
 export const functions = [];
 
