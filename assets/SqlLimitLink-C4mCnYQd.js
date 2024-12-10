@@ -1,0 +1,1 @@
+import{_ as o,r as n,o as r,f as s,w as i,b as a}from"./index-CrHGDJB2.js";const c={};function _(l,t){const e=n("RouterLink");return r(),s(e,{to:{name:"sql-limit"},title:"Оператор SQL LIMIT - примеры использования"},{default:i(()=>t[0]||(t[0]=[a("SQL LIMIT")])),_:1})}const L=o(c,[["render",_]]);export{L as S};
