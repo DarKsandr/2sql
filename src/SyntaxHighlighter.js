@@ -1,3 +1,11 @@
+import SyntaxHighlighter from './lib/shCore';
+import Brush from './lib/shBrushSql';
+
+Brush.prototype	= new SyntaxHighlighter.Highlighter();
+Brush.aliases	= ['sql'];
+
+SyntaxHighlighter.brushes.Sql = Brush;
+
 export default function (){
     SyntaxHighlighter.config.strings.expandSource = '+ expand source';
     SyntaxHighlighter.config.strings.help = '?';
