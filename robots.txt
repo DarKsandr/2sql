@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: ./dist/sitemap.xml
+Sitemap: https://darksandr.github.io/2sql/sitemap.xml
