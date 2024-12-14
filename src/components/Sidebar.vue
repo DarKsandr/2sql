@@ -35,9 +35,10 @@ import {ref, watch, computed} from 'vue';
         document.body.style['overflow-y'] = value ? 'hidden' : 'auto';
     });
 
-    window.addEventListener("resize", (event) => {
-        isOpen.value = false;
-    });
+    //TODO resize problem mobile
+    // window.addEventListener("resize", (event) => {
+    //     isOpen.value = false;
+    // });
 </script>
 
 <template>
