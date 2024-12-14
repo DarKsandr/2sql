@@ -12,7 +12,7 @@ SUM ( [ALL | DISTINCT] expression )
   <p>При указании параметра <strong>DISTINCT</strong> &#8212; происходит подсчет только уникальных значений.</p>
   <hr/>
   <p><strong>Примеры оператора SQL SUM:</strong> Имеется следующая <abbr title="ID - Порядковый номер; UniversityName - Название университета; Students - Количество студентов; Faculties - Количество факультетов; Professores - Количество преподавателей; Location - Местоположение университета; Site - Сайт">таблица Universities</abbr>:</p>
-  <table border="1" cellspacing="0" cellpadding="3">
+  <table-scroll border="1" cellspacing="0" cellpadding="3">
     <thead>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -89,7 +89,7 @@ SUM ( [ALL | DISTINCT] expression )
       <td style="text-align: center;">mephi.ru</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 1.</strong> Используя оператор SQL SUM найти количество студентов (Students) всех университетов в таблице:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT SUM(Students)

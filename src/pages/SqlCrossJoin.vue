@@ -15,7 +15,7 @@ FROM
   <hr/>
   <p><strong>Примеры оператора SQL CROSS JOIN. </strong>Имеются две таблицы:</p>
   <p><strong><abbr title="AuthorID - номер автора; AuthorName - имя автора">Authors</abbr></strong> &#8212; содержит в себе информацию об авторах книг:</p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>AuthorID</strong></td>
@@ -34,9 +34,9 @@ FROM
       <td style="text-align: center;">Andrew Tanenbaum</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong><abbr title="BookID - номер книги; BookName - название книги">Books</abbr></strong> &#8212; содержит в себе информацию о названии книг:</p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>BookID</strong></td>
@@ -59,7 +59,7 @@ FROM
       <td style="text-align: center;">Programming in Scala</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p>В таблице Books поле BookID являются внешним ключом и ссылаются на таблицу Authors.</p>
   <p><strong>Пример 1. </strong>Произвести декартово произведение обеих таблиц с помощью оператора SQL CROSS JOIN:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
@@ -67,7 +67,7 @@ SELECT *
 FROM Authors CROSS JOIN Books
 </pre>
   <p><em>Результирующая таблица будет выглядеть следующим образом:</em></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>Authors.AuthorID</strong></td>
@@ -148,7 +148,7 @@ FROM Authors CROSS JOIN Books
       <td style="text-align: center;">Programming in Scala</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
 </template>
 
 <style scoped>

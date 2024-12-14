@@ -16,7 +16,7 @@ TOP ( N [PERCENT] )
   <p>Параметр PERCENT позволяет задать количество строк в процентах. Эта возможность появилась в MS SQL Server 2012.</p>
   <hr/>
   <p><strong>Примеры оператора SQL TOP. </strong>Имеется следующая <abbr title="Singer - Исполнитель; Album - Альбом; Year - Год Выхода; Sale - Число продаж">таблица Artists:</abbr></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>Singer</strong></td>
@@ -79,14 +79,14 @@ TOP ( N [PERCENT] )
       <td style="text-align: center;">500000</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 1. </strong>Используя оператор SQL TOP вывести первые 4 строки таблицы:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT TOP(4) * FROM Artists
 </pre>
   <p><em>Результат:</em><strong><br/>
   </strong></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>Singer</strong></td>
@@ -119,13 +119,13 @@ SELECT TOP(4) * FROM Artists
       <td style="text-align: center;">600000</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 2. </strong>Используя оператор SQL TOP вывести 3 самых свежих альбома (название и год выпуска):</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT TOP(3) Album, Year FROM Artists ORDER BY Year
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>Album</strong></td>
@@ -144,7 +144,7 @@ SELECT TOP(3) Album, Year FROM Artists ORDER BY Year
       <td style="text-align: center;">2007</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
 </template>
 
 <style scoped>

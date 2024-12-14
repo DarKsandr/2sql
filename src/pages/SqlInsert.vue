@@ -27,7 +27,7 @@ INSERT INTO table_name SELECT column_name,... FROM table_name
     <p><strong>Примеры оператора SQL INSERT. </strong>Имеется следующая <abbr
             title="ID - Порядковый номер планеты; PlanetName - Название; Radius - Радиус; SunSeason - Период обращения вокруг Солнца; OpeningYear - Год открытия; HavingRings - Имеет или нет кольца; Opener - Первооткрыватель">таблица
             Planets</abbr>:</p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>ID</strong></td>
@@ -66,7 +66,7 @@ INSERT INTO table_name SELECT column_name,... FROM table_name
                 <td style="text-align: center;">John Couch Adams</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p><strong>Пример 1. </strong>С помощью оператора SQL INSERT добавить запись, присвоив полям таблицы следующие
         значения &#8212; ID: 4; PlanetName: Venus; Radius: 6051; SunSeason: 243; OpeningYear: 1610; HavingRings: No;
         Opener: Galileo Galilei;</p>
@@ -79,7 +79,7 @@ VALUES (4, &quot;Venus&quot;, 6051, 243, 160, &quot;No&quot;, &quot;Galileo Gali
 SELECT * FROM Planets
 </pre>
     <p>Будет выведена таблица Planets с добавленной записью:</p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>ID</strong></td>
@@ -127,12 +127,12 @@ SELECT * FROM Planets
                 <td style="text-align: center;">Galileo Galilei</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p><strong>Пример 2. </strong>Имеется 2 таблицы &#8212; PlanetWithoutRings(Планеты без колец) и PlanetsWithRings
         (Планеты с кольцами). Как понятно из названия, они отличаются полем HavingRings. В первой таблице все значения в
         нем &#171;No&#187;, во второй &#171;Yes&#187;.</p>
     <p>PlanetWithoutRings:</p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>ID</strong></td>
@@ -171,9 +171,9 @@ SELECT * FROM Planets
                 <td style="text-align: center;">Galileo Galilei</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p>PlanetsWithRings:</p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>ID</strong></td>
@@ -203,7 +203,7 @@ SELECT * FROM Planets
                 <td style="text-align: center;">John Couch Adams</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p><strong>Задача:</strong> С помощью оператора SQL INSERT вставить записи из таблицы PlanetsWithRings в таблицу
         PlanetsWithoutRings.</p>
     <p>Данную задачу можно решить двумя запросами SQL INSERT, как было показано в Примере 1. Однако, мы воспользуемся
@@ -220,7 +220,7 @@ FROM PlanetsWithRings
 SELECT * FROM PlanetsWithoutRings
 </pre>
     <p><em>Результат:</em></p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>ID</strong></td>
@@ -277,5 +277,5 @@ SELECT * FROM PlanetsWithoutRings
                 <td style="text-align: center;">John Couch Adams</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
 </template>

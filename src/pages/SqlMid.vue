@@ -12,7 +12,7 @@ MID(colunm_name,start [,length])
   <p>Параметр <strong>length</strong> устанавливает количество символов для вывода начиная с позиции, указанной в параметре <strong>start</strong>.</p>
   <hr/>
   <p><strong>Примеры оператора SQL MID:</strong> Имеется следующая <abbr title="ID - Порядковый номер; UniversityName - Название университета; Students - Количество студентов; Faculties - Количество факультетов; Professores - Количество преподавателей; Location - Местоположение университета; Site - Сайт">таблица Universities</abbr>:</p>
-  <table border="1" cellspacing="1" cellpadding="1">
+  <table-scroll border="1" cellspacing="1" cellpadding="1">
     <thead>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -89,13 +89,13 @@ MID(colunm_name,start [,length])
       <td style="text-align: center;">mephi.ru</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 1. </strong>Вывести первые 3 символа названия города (Location) с помощью оператора SQL MID:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT MID(Location, 1, 3) FROM Universities
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="1" cellpadding="1">
+  <table-scroll border="1" cellspacing="1" cellpadding="1">
     <thead>
     <tr>
       <td style="text-align: center;"><strong>Location</strong></td>
@@ -124,7 +124,7 @@ SELECT MID(Location, 1, 3) FROM Universities
       <td style="text-align: center;">Mos</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
 </template>
 
 <style scoped>

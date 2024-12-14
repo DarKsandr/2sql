@@ -21,7 +21,7 @@ ORDER BY column_name [ASC | DESC]
     <p><strong>Примеры<strong> оператора SQL ORDER BY</strong>. </strong>Имеется следующая <abbr
             title="Singer - Исполнитель; Album - Альбом; Year - Год Выхода; Sale - Число продаж">таблица Artists:</abbr>
     </p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>Singer</strong></td>
@@ -84,7 +84,7 @@ ORDER BY column_name [ASC | DESC]
                 <td style="text-align: center;">500000</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p><strong>Пример 1. </strong>Вывести все записи таблицы, упорядоченные по названию исполнителя с помощью оператора
         SQL ORDER BY:</p>
     <pre class="brush: sql; title: ; notranslate" title="">
@@ -93,7 +93,7 @@ FROM Artists
 ORDER BY Singer
 </pre>
     <p><em>Результат:</em></p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>Singer</strong></td>
@@ -156,7 +156,7 @@ ORDER BY Singer
                 <td style="text-align: center;">1500000</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p><strong>Пример 2. </strong>С помощью оператора SQL ORDER BY вывести названия исполнителя, альбома, год выпуска
         тех альбомов, которые выпущены после 2005 года, упорядоченные по убыванию года:</p>
     <pre class="brush: sql; title: ; notranslate" title="">
@@ -166,7 +166,7 @@ WHERE Year &gt; 2005
 ORDER BY Year DESC
 </pre>
     <p><em>Результат:</em></p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>Singer</strong></td>
@@ -189,5 +189,5 @@ ORDER BY Year DESC
                 <td style="text-align: center;">2007</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
 </template>

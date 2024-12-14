@@ -7,7 +7,7 @@
         предикатами называются операторы, возвращающие значения TRUE или FALSE. Предикат SQL AND &#8212; эквивалент
         логического умножения (конъюнкции), предикат SQL OR &#8212; эквивалент логического сложения (дизъюнкции).</p>
     <p>Таблица истинности для предикатов следующая:</p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>first_expression</strong></td>
@@ -40,7 +40,7 @@
                 <td style="text-align: center;"><span style="color: #888888;">FALSE</span></td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p>Это значит, что, для выполнения условия предиката SQL AND должны быть выполнены оба условия. Для выполнения
         предиката SQL OR должно быть выполнено хотя бы одно условие.</p>
     <p>Предикат SQL AND имеет следующий синтаксис:</p>
@@ -55,7 +55,7 @@ boolean_expression OR boolean_expression
     <p><strong>Примеры<strong> оператора SQL AND &amp; OR</strong>. </strong>Имеется следующая <abbr
             title="ID - Порядковый номер планеты; PlanetName - Название; Radius - Радиус; SunSeason - Период обращения вокруг Солнца; OpeningYear - Год открытия; HavingRings - Имеет или нет кольца; Opener - Первооткрыватель">таблица
             Planets</abbr>:</p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>ID</strong></td>
@@ -112,7 +112,7 @@ boolean_expression OR boolean_expression
                 <td style="text-align: center;">Galileo Galilei</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p><strong>Пример 1. </strong>Используя операторы SQL AND и SQL OR вывести записи планет, у которых радиус планеты
         меньше 10000 и открытых (OpeningYear) после 1620:</p>
     <pre class="brush: sql; title: ; notranslate" title="">
@@ -121,7 +121,7 @@ FROM Planets
 WHERE Radius &lt; 10000 AND OpeningYear &gt; 1620
 </pre>
     <p><em>Результат:</em></p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>ID</strong></td>
@@ -151,7 +151,7 @@ WHERE Radius &lt; 10000 AND OpeningYear &gt; 1620
                 <td style="text-align: center;">Nicolaus Copernicus</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p><strong>Пример 2. </strong>Используя операторы SQL AND и SQL OR вывести записи планет, названия которых
         начинаются с буквы &#171;N&#187; или заканчиваются на букву &#171;s&#187; и не имеющие колец:</p>
     <pre class="brush: sql; title: ; notranslate" title="">
@@ -162,7 +162,7 @@ OR PlanetName LIKE '%s')
 AND HavingRings = 'No'
 </pre>
     <p><em>Результат:</em></p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>ID</strong></td>
@@ -192,7 +192,7 @@ AND HavingRings = 'No'
                 <td style="text-align: center;">Galileo Galilei</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p>В этом примере используются как предикат SQL AND так и SQL OR. Конечно же, в запросах их можно использовать
         сколько угодно раз (так же как и скобки, которые их ограничивают), для задания более точного условия выборки.
     </p>

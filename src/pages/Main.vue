@@ -25,7 +25,7 @@ import { BASE_NAME } from '../config';
         сможете использовать в рамках самых разнообразных платформ. SQL неизбежно продолжит свое развитие,
         чтобы
         удовлетворять вновь возникающим потребностям рынка и разработчикам программного обеспечения.</p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td>
@@ -52,7 +52,7 @@ column_list, table_name, expression, condition
                 </td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p>Все примеры используемые на сайте являются авторскими и были протестированы на СУБД:</p>
     <ul>
         <li><strong>MS SQL Server</strong> 2008, 2012</li>

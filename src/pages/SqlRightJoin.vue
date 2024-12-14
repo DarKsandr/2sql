@@ -21,7 +21,7 @@ FROM
   <hr/>
   <p><strong>Примеры<strong> оператора SQL RIGHT JOIN</strong>. </strong>Имеются две таблицы:</p>
   <p><strong><abbr title="AuthorID - номер автора; AuthorName - имя автора">Authors</abbr></strong> &#8212; содержит в себе информацию об авторах книг:</p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>AuthorID</strong></td>
@@ -40,9 +40,9 @@ FROM
       <td style="text-align: center;">Andrew Tanenbaum</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong><abbr title="BookID - номер книги; BookName - название книги">Books</abbr></strong> &#8212; содержит в себе информацию о названии книг:</p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>BookID</strong></td>
@@ -65,7 +65,7 @@ FROM
       <td style="text-align: center;">Programming in Scala</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p>В таблице Books поле BookID являются внешним ключом и ссылаются на таблицу Authors.</p>
   <p><strong>Пример 1. </strong>С помощью оператора SQL RIGHT JOIN вывести авторов всех книг:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
@@ -73,7 +73,7 @@ SELECT * FROM Authors
 RIGHT JOIN Books ON Authors.AuthorID = Books.BookID
 </pre>
   <p><em>Результирующая таблица будет выглядеть следующим образом:</em></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>Authors.AuthorID</strong></td>
@@ -106,7 +106,7 @@ RIGHT JOIN Books ON Authors.AuthorID = Books.BookID
       <td style="text-align: center;">Programming in Scala</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p>Информация об авторе книги Programming in Scala отсутствует в таблице Authors, поэтому соответствующие значения заменены NULL.</p>
 </template>
 

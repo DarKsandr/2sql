@@ -11,7 +11,7 @@ LEN(column_name)
   <p>Функция SQL LEN() исключает из подсчета конечные пробелы.</p>
   <hr/>
   <p><strong>Примеры оператора SQL LEN. </strong>Имеется следующая <abbr title="ID - Порядковый номер планеты; PlanetName - Название; Radius - Радиус; SunSeason - Период обращения вокруг Солнца; OpeningYear - Год открытия; HavingRings - Имеет или нет кольца; Opener - Первооткрыватель">таблица Planets</abbr>:</p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -68,14 +68,14 @@ LEN(column_name)
       <td style="text-align: center;">Galileo Galilei</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 1. </strong>Вывести первооткрывателя планеты (Opener) и длину названия открытым им планеты, с помощью оператора SQL LEN:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT Opener, LEN(PlanetName)
 FROM Planets
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>Opener</strong></td>
@@ -102,7 +102,7 @@ FROM Planets
       <td style="text-align: center;">5</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 2. </strong>Вывести разрядность числа радиуса и название планет имеющих кольца, с помощью оператора SQL LEN:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT PlanetName, LEN(Radius)
@@ -110,7 +110,7 @@ FROM Planets
 WHERE HavingRings = 'Yes'
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>PlanetName</strong></td>
@@ -125,7 +125,7 @@ WHERE HavingRings = 'Yes'
       <td style="text-align: center;">6</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
 </template>
 
 <style scoped>

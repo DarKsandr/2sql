@@ -13,7 +13,7 @@ LIMIT first_row [, last_row]
   <p>Оператор SQL LIMIT выводит то количество записей, которое указано в параметре first_row. Если, через запятую указано значение параметра last_row, то будут выведены строки в диапазоне first_row &#8212; last_row включительно.</p>
   <hr/>
   <p><strong>Примеры оператора SQL LIMIT:</strong> Имеется следующая <abbr title="ID - Порядковый номер; UniversityName - Название университета; Students - Количество студентов; Faculties - Количество факультетов; Professores - Количество преподавателей; Location - Местоположение университета; Site - Сайт">таблица Universities</abbr>:</p>
-  <table border="1" cellspacing="0" cellpadding="1">
+  <table-scroll border="1" cellspacing="0" cellpadding="1">
     <thead>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -90,13 +90,13 @@ LIMIT first_row [, last_row]
       <td style="text-align: center;">mephi.ru</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 1. </strong>С использованием оператора SQL LIMIT вывести первые 2 записи таблицы:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT * FROM Universities LIMIT 2
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="0" cellpadding="1">
+  <table-scroll border="1" cellspacing="0" cellpadding="1">
     <thead>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -128,13 +128,13 @@ SELECT * FROM Universities LIMIT 2
       <td style="text-align: center;"> spbu.ru</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 2.</strong> С использованием оператора SQL LIMIT вывести названия университетов из таблицы с 4 по 6:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT UniversityName FROM Universities LIMIT 4, 6
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="0" cellpadding="1">
+  <table-scroll border="1" cellspacing="0" cellpadding="1">
     <thead>
     <tr>
       <td style="text-align: center;"><strong>UniversityName</strong></td>
@@ -151,7 +151,7 @@ SELECT UniversityName FROM Universities LIMIT 4, 6
       <td style="text-align: center;">Ural Federal University</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
 </template>
 
 <style scoped>

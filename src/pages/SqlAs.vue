@@ -10,7 +10,7 @@ SELECT column_name AS new_column_name FROM table_name
 </pre>
   <hr/>
   <p><strong>Примеры оператора SQL AS. </strong>Имеется следующая <abbr title="ID - Порядковый номер планеты; PlanetName - Название; Radius - Радиус; SunSeason - Период обращения вокруг Солнца; OpeningYear - Год открытия; HavingRings - Имеет или нет кольца; Opener - Первооткрыватель">таблица Planets</abbr>:</p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -67,13 +67,13 @@ SELECT column_name AS new_column_name FROM table_name
       <td style="text-align: center;">Galileo Galilei</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 1. </strong>С помощью оператора SQL AS вывести среднее значение радиуса планет таблицы:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT AVG(Radius) AS AverageRadius FROM Planets
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>AverageRadius</strong></td>
@@ -82,7 +82,7 @@ SELECT AVG(Radius) AS AverageRadius FROM Planets
       <td style="text-align: center;">19383,6</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p>Столбец стал называться AverageRadius. Без использования оператора SQL AS, столбец имел бы название AVG(Radius), что могло бы быть не понятным тем, кто будет смотреть результаты выборки данных.</p>
 </template>
 

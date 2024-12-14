@@ -11,7 +11,7 @@
   <pre class="brush: sql; title: ; notranslate" title="">COUNT(*)</pre>
   <hr/>
   <p><strong>Примеры оператора SQL COUNT:</strong> Имеется следующая <abbr title="ID - Порядковый номер; UniversityName - Название университета; Students - Количество студентов; Faculties - Количество факультетов; Professores - Количество преподавателей; Location - Местоположение университета; Site - Сайт">таблица Universities</abbr>:</p>
-  <table border="1" cellspacing="1" cellpadding="1">
+  <table-scroll border="1" cellspacing="1" cellpadding="1">
     <thead>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -88,7 +88,7 @@
       <td style="text-align: center;">mephi.ru</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 1.</strong> Вывести число записей таблицы, используя оператор SQL COUNT:</p>
   <pre class="brush: sql; title: ; notranslate" title="">SELECT COUNT(*)&lt;br /&gt;FROM Universities</pre>
   <p><em>Ответ: 7</em></p>

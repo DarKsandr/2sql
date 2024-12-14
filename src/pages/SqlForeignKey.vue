@@ -25,7 +25,7 @@ ID_2 int FOREIGN KEY REFERENCES table_2(ID_2)
   <hr/>
   <p><strong>Примеры оператора SQL FOREIGN KEY. </strong>Имеются две таблицы:</p>
   <p><strong><abbr title="AuthorID - номер автора; AuthorName - имя автора">Authors</abbr></strong> &#8212; содержит в себе информацию об авторах книг:</p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>AuthorID</strong></td>
@@ -44,9 +44,9 @@ ID_2 int FOREIGN KEY REFERENCES table_2(ID_2)
       <td style="text-align: center;">Andrew Tanenbaum</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong><abbr title="BookID - номер книги; BookName - название книги">Books</abbr></strong> &#8212; содержит в себе информацию о названии книг:</p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>BookID</strong></td>
@@ -69,7 +69,7 @@ ID_2 int FOREIGN KEY REFERENCES table_2(ID_2)
       <td style="text-align: center;">Computer Architecture</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p>В таблице Books поле BookID являются Внешним ключом и ссылаются на таблицу Authors. Для организации таблиц с подобной структурой используется следующий код (для <strong>MS SQL Server</strong>) с использованием оператора SQL FOREIGN KEY:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 CREATE TABLE Authors (

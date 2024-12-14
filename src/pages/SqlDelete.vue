@@ -18,7 +18,7 @@ DELETE FROM table_name WHERE condition
     <p><strong>Примеры<strong> оператора SQL DELETE</strong>. </strong>Имеется следующая <abbr
             title="ID - Порядковый номер планеты; PlanetName - Название; Radius - Радиус; SunSeason - Период обращения вокруг Солнца; OpeningYear - Год открытия; HavingRings - Имеет или нет кольца; Opener - Первооткрыватель">таблица
             Planets</abbr>:</p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>ID</strong></td>
@@ -75,7 +75,7 @@ DELETE FROM table_name WHERE condition
                 <td style="text-align: center;">Galileo Galilei</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p><strong>Пример 1. </strong>С помощью оператора SQL DELETE удалить из таблицы все планеты, у которых нет колец и
         их период обращения вокруг Солнца (SunSeason) больше 200:</p>
     <pre class="brush: sql; title: ; notranslate" title="">
@@ -91,7 +91,7 @@ SELECT *
 FROM Planets
 </pre>
     <p><em>Результат:</em></p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>ID</strong></td>
@@ -130,6 +130,6 @@ FROM Planets
                 <td style="text-align: center;">Nicolaus Copernicus</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p>В таблице осталась запись под ID = 4, так как она не выполняет условия оператора <SqlWhereLink />: период обращения вокруг Солнца (SunSeason) в ней не больше 200.</p>
 </template>

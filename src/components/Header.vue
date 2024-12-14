@@ -16,19 +16,15 @@ import { BASE_NAME } from '../config';
 <style scoped>
 #header {
 	width: 100%;
-	height: 40px;
-	margin-bottom: 20px;
 	/*line-height:40px;*/
 	color: #fff;
 	grid-area: header;
 }
 
 #site-info {
-	text-align: center;
-	/*margin-left:20px;*/
+	margin-left:20px;
 	padding-top: 25px;
 	width: 230px;
-	height: 100px;
 }
 #title_text {
 	font-size: 120%;

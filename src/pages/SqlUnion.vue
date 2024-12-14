@@ -16,7 +16,7 @@ SELECT column_name(s) FROM table2
   <p>Важно отметить, что каждый из операторов <SqlSelectLink /> должен иметь в своем запросе одинаковое количество столбцов и типы возвращаемых данных, иначе произойдет ошибка при формировании результирующей таблицы.</p>
   <hr/>
   <p><strong>Примеры оператора SQL UNION. </strong>Имеется следующая <abbr title="Singer - Исполнитель; Album - Альбом; Year - Год Выхода; Sale - Число продаж">таблица Artists:</abbr></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>Singer</strong></td>
@@ -79,7 +79,7 @@ SELECT column_name(s) FROM table2
       <td style="text-align: center;">500000</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 1. </strong>С помощью оператора SQL UNION вывести название исполнителя и альбома с использованием оператора UNION:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT Singer FROM Artists
@@ -87,7 +87,7 @@ UNION
 SELECT Album FROM Artists
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>Singer</strong></td>
@@ -130,7 +130,7 @@ SELECT Album FROM Artists
       <td style="text-align: center;">Resilience</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
 </template>
 
 <style scoped>

@@ -9,10 +9,6 @@ Tags: flexible-width, two-columns, right-sidebar
 */
 
 html {
-	/* Vertical Scrollbar */
-	/* IE */
-	overflow-y: scroll;
-	/* Moz illa*/
 	height: 100%;
 	margin-bottom: 0.1em;
 	box-sizing: border-box;

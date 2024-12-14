@@ -21,7 +21,7 @@ WHERE condition
     <p><strong>Примеры<strong> оператора SQL WHERE</strong>. </strong>Имеется следующая <abbr
             title="ID - Порядковый номер планеты; PlanetName - Название; Radius - Радиус; SunSeason - Период обращения вокруг Солнца; OpeningYear - Год открытия; HavingRings - Имеет или нет кольца; Opener - Первооткрыватель">таблица
             Planets</abbr>:</p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>ID</strong></td>
@@ -78,14 +78,14 @@ WHERE condition
                 <td style="text-align: center;">Galileo Galilei</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p><strong>Пример 1.</strong> Используя оператор SQL WHERE вывести записи, значение радиуса (Radius) которых
         находится в пределах от 3000 до 9000:</p>
     <pre class="brush: sql; title: ; notranslate" title="">
 SELECT * FROM Planets WHERE Radius BETWEEN 3000 AND 9000
 </pre>
     <p><em>Результат:</em></p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>ID</strong></td>
@@ -115,7 +115,7 @@ SELECT * FROM Planets WHERE Radius BETWEEN 3000 AND 9000
                 <td style="text-align: center;">Galileo Galilei</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p><strong>Пример 2. </strong>Используя оператор SQL WHERE вывести название планеты (PlanetName), год ее открытия
         (OpeningYear) и имя первооткрывателя (Opener), планет, чье название не начинается или не заканчивается на букву
         &#171;s&#187;:</p>
@@ -126,7 +126,7 @@ WHERE PlanetName NOT LIKE '%s'
 AND PlanetName NOT LIKE 'S%'
 </pre>
     <p><em>Результат:</em></p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>PlanetName</strong></td>
@@ -144,5 +144,5 @@ AND PlanetName NOT LIKE 'S%'
                 <td style="text-align: center;">Nicolaus Copernicus</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
 </template>

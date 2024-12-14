@@ -10,7 +10,7 @@ AVG(column_name)
 </pre>
   <hr/>
   <p><strong>Примеры оператора SQL AVG:</strong> Имеется следующая <abbr title="ID - Порядковый номер; UniversityName - Название университета; Students - Количество студентов; Faculties - Количество факультетов; Professores - Количество преподавателей; Location - Местоположение университета; Site - Сайт">таблица Universities</abbr>:</p>
-  <table border="1" cellspacing="1" cellpadding="1">
+  <table-scroll border="1" cellspacing="1" cellpadding="1">
     <thead>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -87,7 +87,7 @@ AVG(column_name)
       <td style="text-align: center;">mephi.ru</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 1.</strong> Используя оператор SQL AVG найти среднее число студентов (Students) всех университетов:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT AVG(Students)

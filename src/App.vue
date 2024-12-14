@@ -20,13 +20,11 @@ import Footer from './components/Footer.vue';
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 #page {
 	text-align: left;
 	width: 100%;
-  min-width: 1100px;
-	background: url(/src/images/bg1.png);
-	background-attachment: fixed;
+	background: url(/src/images/bg1.png) fixed;
 	padding: 0;
 	min-height: 600px;
 	color: #fff;
@@ -35,6 +33,13 @@ import Footer from './components/Footer.vue';
 	"header header" min-content
 	"sidebar poster" max-content
 	"footer footer" min-content / min-content auto;
+
+  @include respond-to(mobile) { 
+    grid-template: 
+          "header" min-content
+          "poster" max-content
+          "footer" min-content / auto;
+  }
 }
 #poster {
   grid-area: poster;
@@ -43,20 +48,13 @@ import Footer from './components/Footer.vue';
   margin-bottom: 70px;
 }
 #post-content {
-  margin: 0 20px 40px 40px;
+  margin: 0 20px;
   font-size: 1.2em;
-  margin: 0 20px 40px 40px;
   text-align: justify;
-  padding: 10px;
   -moz-border-radius: 5px;
-  width: 65%;
+  max-width: 1000px;
 }
 .entry{
   margin-top: 30px;
-}
-@media only screen and (max-width: 1400px) {
-  #post-content {
-    width: auto;
-  }
 }
 </style>

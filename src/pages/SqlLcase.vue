@@ -11,7 +11,7 @@ LCASE(column_name)
   <p>В СУБД <strong>MS SQL Server</strong> аналогом оператора SQL LCASE() является функция LOWER с тем же синтаксисом.</p>
   <hr/>
   <p><strong>Примеры оператора SQL LCASE. </strong>Имеется следующая <abbr title="ID - Порядковый номер планеты; PlanetName - Название; Radius - Радиус; SunSeason - Период обращения вокруг Солнца; OpeningYear - Год открытия; HavingRings - Имеет или нет кольца; Opener - Первооткрыватель">таблица Planets</abbr>:</p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -68,7 +68,7 @@ LCASE(column_name)
       <td style="text-align: center;">Galileo Galilei</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 1. </strong>С помощью оператора SQL LCASE вывести в нижнем регистре названия планет, у которых есть кольца:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT LCASE(PlanetName)
@@ -76,7 +76,7 @@ FROM Planets
 WHERE HavingRings = 'Yes'
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>PlanetName</strong></td>
@@ -88,7 +88,7 @@ WHERE HavingRings = 'Yes'
       <td style="text-align: center;">neptune</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 2. </strong>Пример для <strong>MS SQL Server. </strong>С помощью оператора SQL LCASE вывести в нижнем регистре имена первооткрывателей планет, открытых до 1650 года:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT LOWER(Opener)
@@ -96,7 +96,7 @@ FROM Planets
 WHERE OpeningYear &lt; 1650
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>Opener</strong></td>
@@ -108,7 +108,7 @@ WHERE OpeningYear &lt; 1650
       <td style="text-align: center;">galileo galilei</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
 </template>
 
 <style scoped>

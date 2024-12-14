@@ -10,7 +10,7 @@ expression [ NOT ] LIKE pattern
 </pre>
   <p>где, <em>expression</em> &#8212; любое символьное выражение</p>
   <p><em>pattern</em> &#8212; шаблон, по которому будет происходить проверка выражения <em>expression. </em>Шаблон может включать в себя следующие спец. символы:</p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>Символ</strong></td>
@@ -40,10 +40,10 @@ expression [ NOT ] LIKE pattern
       <td style="text-align: center;">Пример 4</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <hr/>
   <p><strong>Примеры оператора SQL LIKE:</strong> Имеется следующая <abbr title="ID - Порядковый номер; UniversityName - Название университета; Students - Количество студентов; Faculties - Количество факультетов; Professores - Количество преподавателей; Location - Местоположение университета; Site - Сайт">таблица Universities</abbr>:</p>
-  <table border="1" cellspacing="0" cellpadding="1">
+  <table-scroll border="1" cellspacing="0" cellpadding="1">
     <thead>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -120,13 +120,13 @@ expression [ NOT ] LIKE pattern
       <td style="text-align: center;">mephi.ru</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 1.</strong> С помощью оператора SQL LIKE вывести записи университетов, имеющих в своем названии слово &#171;State&#187;:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT * FROM Universities WHERE UniversityName LIKE '%State%'
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="0" cellpadding="1">
+  <table-scroll border="1" cellspacing="0" cellpadding="1">
     <thead>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -176,14 +176,14 @@ SELECT * FROM Universities WHERE UniversityName LIKE '%State%'
       <td style="text-align: center;">msu.ru</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p>В этом примере, в качестве шаблона оператора SQL LIKE послужил &#8216;%State%&#8217;. Исходя из условия задачи, слово State может стоять в названии где угодно, поэтому оно обрамлено символом &#171;%&#187;, обозначающим строку любой длины перед и после слова.</p>
   <p><strong>Пример 2.</strong> С помощью оператора SQL LIKE вывести записи университетов, доменное имя сайта которых содержит 4 символа (за исключением домена .ru):</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT * FROM Universities WHERE Site LIKE '____.ru'
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="0" cellpadding="1">
+  <table-scroll border="1" cellspacing="0" cellpadding="1">
     <thead>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -215,13 +215,13 @@ SELECT * FROM Universities WHERE Site LIKE '____.ru'
       <td style="text-align: center;">urfu.ru</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 3. </strong>С помощью оператора SQL LIKE вывести записи университетов, первая буква доменного имени сайта которых содержит буквы из диапазона [k-o]:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT * FROM Universities WHERE Site LIKE '[k-o]%'
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="0" cellpadding="1">
+  <table-scroll border="1" cellspacing="0" cellpadding="1">
     <thead>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -262,13 +262,13 @@ SELECT * FROM Universities WHERE Site LIKE '[k-o]%'
       <td style="text-align: center;">mephi.ru</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 4. </strong>С помощью оператора SQL LIKE вывести записи университетов, вторая буква названия города которых, не входит в диапазон [e-o]:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT * FROM Universities WHERE Location LIKE '_[^e-o]%'
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="0" cellpadding="1">
+  <table-scroll border="1" cellspacing="0" cellpadding="1">
     <thead>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -291,7 +291,7 @@ SELECT * FROM Universities WHERE Location LIKE '_[^e-o]%'
       <td style="text-align: center;"> spbu.ru</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
 </template>
 
 <style scoped>

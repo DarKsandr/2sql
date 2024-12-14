@@ -15,7 +15,7 @@ LAST(column_name)
   <p>Примеры аналогов функции SQL LAST() для различных СУБД описаны ниже.</p>
   <hr/>
   <p><strong>Примеры оператора SQL LAST. </strong>Имеется следующая <abbr title="ID - Порядковый номер планеты; PlanetName - Название; Radius - Радиус; SunSeason - Период обращения вокруг Солнца; OpeningYear - Год открытия; HavingRings - Имеет или нет кольца; Opener - Первооткрыватель">таблица Planets</abbr>:</p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -72,7 +72,7 @@ LAST(column_name)
       <td style="text-align: center;">Galileo Galilei</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 1. </strong>Используя оператор SQL LAST вывести последнее значение столбца Opener:</p>
   <p>Решение для <strong>MS Access</strong>:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
@@ -100,7 +100,7 @@ ORDER BY Opener DESC
 WHERE ROWNUM &lt;= 1
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>Opener</strong></td>
@@ -109,7 +109,7 @@ WHERE ROWNUM &lt;= 1
       <td style="text-align: center;">Galileo Galilei</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
 </template>
 
 <style scoped>

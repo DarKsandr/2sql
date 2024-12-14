@@ -10,7 +10,7 @@ expression [ NOT ] IN ( expression, [...] )
 </pre>
   <hr/>
   <p><strong>Примеры оператора SQL IN:</strong> Имеется следующая <abbr title="ID - Порядковый номер; UniversityName - Название университета; Students - Количество студентов; Faculties - Количество факультетов; Professores - Количество преподавателей; Location - Местоположение университета; Site - Сайт">таблица Universities</abbr>:</p>
-  <table border="1" cellspacing="1" cellpadding="1">
+  <table-scroll border="1" cellspacing="1" cellpadding="1">
     <thead>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -87,7 +87,7 @@ expression [ NOT ] IN ( expression, [...] )
       <td style="text-align: center;">mephi.ru</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 1. </strong>Используя оператор SQL IN вывести записи университетов из Новосибирска и Перми:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT *
@@ -103,7 +103,7 @@ OR Location = 'Perm'
 </pre>
   <p>Но если значений много, то удобней перечислить их в операторе SQL IN</p>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="1" cellpadding="1">
+  <table-scroll border="1" cellspacing="1" cellpadding="1">
     <thead>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -135,7 +135,7 @@ OR Location = 'Perm'
       <td style="text-align: center;">nsu.ru</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
 </template>
 
 <style scoped>

@@ -14,7 +14,7 @@ WHERE condition
 </pre>
   <hr/>
   <p><strong>Примеры оператора SQL VIEW. </strong>Имеется следующая <abbr title="ID - Порядковый номер планеты; PlanetName - Название; Radius - Радиус; SunSeason - Период обращения вокруг Солнца; OpeningYear - Год открытия; HavingRings - Имеет или нет кольца; Opener - Первооткрыватель">таблица Planets</abbr>:</p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -71,7 +71,7 @@ WHERE condition
       <td style="text-align: center;">Galileo Galilei</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 1.</strong> Используя оператор SQL VIEW создать на основе таблицы Planets представление, содержащее в себе название планеты и год ее открытия:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 CREATE VIEW PlanetsView
@@ -83,7 +83,7 @@ FROM Planets
 SELECT * FROM PlanetsView
 </pre>
   <p>Результат:</p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>PlanetName</strong></td>
@@ -110,7 +110,7 @@ SELECT * FROM PlanetsView
       <td style="text-align: center;">1610</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
 </template>
 
 <style scoped>

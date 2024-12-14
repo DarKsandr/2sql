@@ -17,7 +17,7 @@ GROUP BY column_name
     <p><strong>Примеры<strong> оператора SQL GROUP BY</strong>. </strong>Имеется следующая <abbr
             title="Singer - Исполнитель; Album - Альбом; Year - Год Выхода; Sale - Число продаж">таблица Artists:</abbr>
     </p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>Singer</strong></td>
@@ -80,7 +80,7 @@ GROUP BY column_name
                 <td style="text-align: center;">500000</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p><strong>Пример 1.</strong> Используя оператор SQL GROUP BY найти сумму продаж альбомов (Sale) всех исполнителей
         (Singer):</p>
     <pre class="brush: sql; title: ; notranslate" title="">
@@ -89,7 +89,7 @@ FROM Artists
 GROUP BY Singer
 </pre>
     <p><em>Результат:</em></p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>Singer</strong></td>
@@ -108,7 +108,7 @@ GROUP BY Singer
                 <td style="text-align: center;">3300000</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p>В данном запросе используется оператор <SqlAsLink />, позволяющий задать новое имя столбца AllSales на выходе. В нашем случае это сделано для наглядности.
     </p>
     <p><strong>Пример 2. </strong>Узнать в каком году был выпущен последний альбом каждой из групп используя оператор
@@ -119,7 +119,7 @@ FROM Artists
 GROUP BY Singer
 </pre>
     <p><em>Результат:</em></p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>Singer</strong></td>
@@ -138,5 +138,5 @@ GROUP BY Singer
                 <td style="text-align: center;">2008</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
 </template>

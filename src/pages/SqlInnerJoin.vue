@@ -21,7 +21,7 @@ ON condition
   <p><strong>Примеры<strong> оператора SQL INNER JOIN</strong>. </strong>Имеются две таблицы:</p>
   <p><strong><abbr title="AuthorID - номер автора; AuthorName - имя автора">Authors</abbr></strong> &#8212; содержит в
     себе информацию об авторах книг:</p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>AuthorID</strong></td>
@@ -40,10 +40,10 @@ ON condition
       <td style="text-align: center;">Andrew Tanenbaum</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong><abbr title="BookID - номер книги; BookName - название книги">Books</abbr></strong> &#8212; содержит в себе
     информацию о названии книг:</p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>BookID</strong></td>
@@ -66,7 +66,7 @@ ON condition
       <td style="text-align: center;">Programming in Scala</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p>В таблице Books поле BookID являются <SqlForeignKeyLink>внешним ключом</SqlForeignKeyLink> и ссылаются на таблицу Authors.</p>
   <p><strong>Пример 1. </strong>Используя оператор SQL INNER JOIN вывести на экран, какими авторами были написаны какие
     из книг:</p>
@@ -79,7 +79,7 @@ ON Authors.AuthorID = Books.BookID
     результирующую таблицу не попадет книга под названием Programming in Scala, так как значение ее BookID не найдет
     равенства ни с одной строкой AuthorID.</p>
   <p><em>Результирующая таблица будет выглядеть следующим образом:</em></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>Authors.AuthorID</strong></td>
@@ -106,7 +106,7 @@ ON Authors.AuthorID = Books.BookID
       <td style="text-align: center;">Computer Architecture</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
 </template>
 
 <style scoped>

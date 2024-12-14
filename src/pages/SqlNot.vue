@@ -11,7 +11,7 @@
 </pre>
   <hr/>
   <p><strong>Примеры оператора SQL NOT. </strong>Имеется следующая <abbr title="Singer - Исполнитель; Album - Альбом; Year - Год Выхода; Sale - Число продаж">таблица Artists:</abbr></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>Singer</strong></td>
@@ -74,13 +74,13 @@
       <td style="text-align: center;">500000</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 1. </strong>Используя оператор SQL NOT вывести записи таблицы, без исполнителя Drowning Pool и Massive Attack:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT * FROM Artists WHERE Singer NOT IN ('Drowning Pool', 'Massive Attack')
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>Singer</strong></td>
@@ -107,7 +107,7 @@ SELECT * FROM Artists WHERE Singer NOT IN ('Drowning Pool', 'Massive Attack')
       <td style="text-align: center;">1500000</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p>Очевидно, что в нашем случае, с такой небольшой таблицей удобней было бы использовать запрос:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 
@@ -120,7 +120,7 @@ SELECT * FROM Artists WHERE Singer = &quot;The Prodigy&quot;
 SELECT * FROM Artists WHERE Album NOT LIKE &quot;% %&quot;
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>Singer</strong></td>
@@ -147,7 +147,7 @@ SELECT * FROM Artists WHERE Album NOT LIKE &quot;% %&quot;
       <td style="text-align: center;">500000</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
 </template>
 
 <style scoped>

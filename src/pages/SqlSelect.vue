@@ -28,7 +28,7 @@ ORDER BY expression]
     <p><strong>Примеры оператора SQL SELECT. </strong>Имеется следующая <abbr
             title="ID - Порядковый номер планеты; PlanetName - Название; Radius - Радиус; SunSeason - Период обращения вокруг Солнца; OpeningYear - Год открытия; HavingRings - Имеет или нет кольца; Opener - Первооткрыватель">таблица
             Planets</abbr>:</p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>ID</strong></td>
@@ -85,13 +85,13 @@ ORDER BY expression]
                 <td style="text-align: center;">Galileo Galilei</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p><strong>Пример 1</strong>. С помощью оператора SQL SELECT вывести названия планет (Name):</p>
     <pre class="brush: sql; title: ; notranslate" title="">
 SELECT PlanetName FROM Planets
 </pre>
     <p><em>Результат:</em></p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>PlanetName</strong></td>
@@ -112,14 +112,14 @@ SELECT PlanetName FROM Planets
                 <td style="text-align: center;">Venus</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p><strong>Пример 2. </strong>С помощью оператора SQL SELECT вывести названия планет, у которых есть кольца
         (HavingRings):</p>
     <pre class="brush: sql; title: ; notranslate" title="">
 SELECT PlanetName FROM Planet WHERE HavingRings = 'Yes'
 </pre>
     <p><em>Результат:</em></p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>PlanetName</strong></td>
@@ -131,13 +131,13 @@ SELECT PlanetName FROM Planet WHERE HavingRings = 'Yes'
                 <td style="text-align: center;">Neptune</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p><strong>Пример 3. </strong>С помощью оператора SQL SELECT вывести информацию о планете Нептун:</p>
     <pre class="brush: sql; title: ; notranslate" title="">
 SELECT * FROM Planets WHERE PlanetName = 'Neptune'
 </pre>
     <p><em>Результат:</em></p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>ID</strong></td>
@@ -158,5 +158,5 @@ SELECT * FROM Planets WHERE PlanetName = 'Neptune'
                 <td style="text-align: center;">John Couch Adams</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
 </template>

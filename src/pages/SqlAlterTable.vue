@@ -11,7 +11,7 @@ ADD column_name datatype
 </pre>
   <hr/>
   <p><strong>Примеры оператора SQL ALTER TABLE. </strong>Имеется следующая <abbr title="Singer - Исполнитель; Album - Альбом; Year - Год Выхода; Sale - Число продаж">таблица Artists:</abbr></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>Singer</strong></td>
@@ -74,7 +74,7 @@ ADD column_name datatype
       <td style="text-align: center;">500000</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 1. </strong>Добавить столбец Producer, используя оператор SQL ALTER TABLE:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 ATLER TABLE Artists ADD Producer varchar(20)
@@ -84,7 +84,7 @@ ATLER TABLE Artists ADD Producer varchar(20)
 SELECT * FROM Artists
 </pre>
   <p>Результат:</p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>Singer</strong></td>
@@ -157,7 +157,7 @@ SELECT * FROM Artists
       <td style="text-align: center;"></td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
 </template>
 
 <style scoped>

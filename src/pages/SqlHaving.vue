@@ -23,7 +23,7 @@ HAVING aggregate_function(column_name) operator value
     <p><strong>Примеры <strong>оператора SQL HAVING</strong>. </strong>Имеется следующая <abbr
             title="Singer - Исполнитель; Album - Альбом; Year - Год Выхода; Sale - Число продаж">таблица Artists:</abbr>
     </p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>Singer</strong></td>
@@ -86,7 +86,7 @@ HAVING aggregate_function(column_name) operator value
                 <td style="text-align: center;">500000</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p><strong>Пример 1. </strong>Используя оператор SQL HAVING вывести название исполнителей (Singer) число продаж
         альбомов (Sale) которого больше 2000000:</p>
     <pre class="brush: sql; title: ; notranslate" title="">
@@ -96,7 +96,7 @@ GROUP BY Singer
 HAVING SUM(Sale) &gt; 2000000
 </pre>
     <p><em>Результат:</em></p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>Singer</strong></td>
@@ -111,7 +111,7 @@ HAVING SUM(Sale) &gt; 2000000
                 <td style="text-align: center;">33000000</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p>В результат не попала группа Drowning Pool, так как общее число проданных ею пластинок равняется 1700000</p>
     <p><strong>Пример 2. </strong>Используя оператор SQL HAVING вывести название исполнителя, который исполнялся еще до
         1995 года:</p>
@@ -122,7 +122,7 @@ GROUP BY Singer
 HAVING MIN(Year) &lt; 1995
 </pre>
     <p><em>Результат:</em></p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong style="text-align: center;">Singer</strong></td>
@@ -133,5 +133,5 @@ HAVING MIN(Year) &lt; 1995
                 <td style="text-align: center;">1994</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
 </template>

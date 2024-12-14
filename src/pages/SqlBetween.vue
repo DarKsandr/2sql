@@ -16,7 +16,7 @@ test_expression [NOT] BETWEEN begin_expression AND end_expression
   </ul>
   <hr/>
   <p><strong>Примеры оператора SQL BETWEEN:</strong> Имеется следующая <abbr title="ID - Порядковый номер; UniversityName - Название университета; Students - Количество студентов; Faculties - Количество факультетов; Professores - Количество преподавателей; Location - Местоположение университета; Site - Сайт">таблица Universities</abbr>:</p>
-  <table border="1" cellspacing="1" cellpadding="1">
+  <table-scroll border="1" cellspacing="1" cellpadding="1">
     <thead>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -93,7 +93,7 @@ test_expression [NOT] BETWEEN begin_expression AND end_expression
       <td style="text-align: center;">mephi.ru</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 1. </strong>Используя оператор SQL BETWEEN вывести записи тех университетов, число студентов (Students) которых от 10000 до 30000:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT *
@@ -101,7 +101,7 @@ FROM Universities
 WHERE Students BETWEEN 10000 AND 30000
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="1" cellpadding="1">
+  <table-scroll border="1" cellspacing="1" cellpadding="1">
     <thead>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -142,7 +142,7 @@ WHERE Students BETWEEN 10000 AND 30000
       <td style="text-align: center;">hse.ru</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p>Данный пример можно так же записать и с помощью операторов сравнения (&lt;,&gt;,=) и оператора <SqlWhereLink />. Так, нижеприведенный код будет выведет точно такой же результат:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT *
@@ -156,7 +156,7 @@ FROM Universities
 WHERE Professores NOT BETWEEN 2000 AND 14000
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="1" cellpadding="1">
+  <table-scroll border="1" cellspacing="1" cellpadding="1">
     <thead>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -215,7 +215,7 @@ WHERE Professores NOT BETWEEN 2000 AND 14000
       <td style="text-align: center;">mephi.ru</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
 </template>
 
 <style scoped>

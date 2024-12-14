@@ -11,5 +11,14 @@ export default defineConfig(({mode}) => {
       host: true,
       port: Number(env.VITE_PORT)
     },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `
+            @use "/src/css/mixin" as *;
+          `
+        }
+      }
+    }
   };
 })

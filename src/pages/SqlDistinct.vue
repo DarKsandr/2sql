@@ -15,7 +15,7 @@ SELECT DISTINCT column_name FROM table_name
     <p><strong>Примеры<strong> оператора SQL DISTINCT</strong>. </strong>Имеется следующая <abbr
             title="Singer - Исполнитель; Album - Альбом; Year - Год Выхода; Sale - Число продаж">таблица Artists:</abbr>
     </p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>Singer</strong></td>
@@ -78,7 +78,7 @@ SELECT DISTINCT column_name FROM table_name
                 <td style="text-align: center;">500000</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p><strong>Пример 1. </strong>Используя оператор SQL DISTINCT вывести, какие исполнители (Singer) имеются в таблице:
     </p>
     <pre class="brush: sql; title: ; notranslate" title="">
@@ -86,7 +86,7 @@ SELECT DISTINCT Singer
 FROM Artists
 </pre>
     <p><em>Результат:</em></p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>Singer</strong></td>
@@ -101,7 +101,7 @@ FROM Artists
                 <td style="text-align: center;">Massive Attack</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
     <p><strong>Пример 2. </strong>Используя оператор SQL DISTINCT вывести количество уникальных исполнителей в таблице:
     </p>
     <pre class="brush: sql; title: ; notranslate" title="">
@@ -110,7 +110,7 @@ AS CountOfSingers
 FROM Artists
 </pre>
     <p><em>Результат:</em></p>
-    <table border="1" cellspacing="0">
+    <table-scroll border="1" cellspacing="0">
         <tbody>
             <tr>
                 <td style="text-align: center;"><strong>CountOfSingers</strong></td>
@@ -119,5 +119,5 @@ FROM Artists
                 <td style="text-align: center;">3</td>
             </tr>
         </tbody>
-    </table>
+    </table-scroll>
 </template>

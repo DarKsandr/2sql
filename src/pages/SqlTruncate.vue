@@ -17,7 +17,7 @@ TRUNCATE TABLE Table_name
 </pre>
   <hr/>
   <p><strong>Примеры оператора SQL TRUNCATE. </strong>Имеется следующая <abbr title="Singer - Исполнитель; Album - Альбом; Year - Год Выхода; Sale - Число продаж">таблица Artists:</abbr></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>Singer</strong></td>
@@ -80,7 +80,7 @@ TRUNCATE TABLE Table_name
       <td style="text-align: center;">500000</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 1. </strong>Удалить все данные из таблицы используя оператор SQL TRUNCATE:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 

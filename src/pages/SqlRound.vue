@@ -12,7 +12,7 @@ ROUND(expression, length)
   <p>length &#8212; указывает точность округления для числа.</p>
   <hr/>
   <p><strong>Примеры оператора SQL ROUND. </strong>Имеется следующая <abbr title="ID - Порядковый номер планеты; PlanetName - Название; Radius - Радиус; SunSeason - Период обращения вокруг Солнца; OpeningYear - Год открытия; HavingRings - Имеет или нет кольца; Opener - Первооткрыватель">таблица Planets</abbr>:</p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>ID</strong></td>
@@ -69,13 +69,13 @@ ROUND(expression, length)
       <td style="text-align: center;">Galileo Galilei</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 1.</strong> Используя оператор SQL ROUND округлить столбец SunSeason с точностью до одного знака после запятой:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
 SELECT ROUND(SunSeason, 1) FROM Planets
 </pre>
   <p><em>Результат:</em></p>
-  <table border="1" cellspacing="0">
+  <table-scroll border="1" cellspacing="0">
     <tbody>
     <tr>
       <td style="text-align: center;"><strong>SunSeason</strong></td>
@@ -96,7 +96,7 @@ SELECT ROUND(SunSeason, 1) FROM Planets
       <td style="text-align: center;">243.5</td>
     </tr>
     </tbody>
-  </table>
+  </table-scroll>
   <p><strong>Пример 2. </strong>Округлить значение числа с использованием оператора SQL ROUND.</p>
   <p>Функция SQL ROUND() может принимать в качестве первого аргумента любое вещественное число:</p>
   <pre class="brush: sql; title: ; notranslate" title="">
