@@ -20,17 +20,17 @@ import { basic, advanced, functions } from '../routes';
 <template>
     <div id="sidebar">
         <ul>
-            <li id="search-2" class="widgetall widget_search">
-                <h2 class="widgettitle">Поиск</h2>
-                <form role="search" method="get" id="searchform" class="searchform"
-                    action="">
-                    <div>
-                        <label class="screen-reader-text" for="s">Найти:</label>
-                        <input type="text" value="" name="s" id="s" />
-                        <input type="submit" id="searchsubmit" value="Поиск" />
-                    </div>
-                </form>
-            </li>
+<!--            <li id="search-2" class="widgetall widget_search">-->
+<!--                <h2 class="widgettitle">Поиск</h2>-->
+<!--                <form role="search" method="get" id="searchform" class="searchform"-->
+<!--                    action="">-->
+<!--                    <div>-->
+<!--                        <label class="screen-reader-text" for="s">Найти:</label>-->
+<!--                        <input type="text" value="" name="s" id="s" />-->
+<!--                        <input type="submit" id="searchsubmit" value="Поиск" />-->
+<!--                    </div>-->
+<!--                </form>-->
+<!--            </li>-->
             <li v-for="{title, items: elements} in items" class="widgetall widget_nav_menu">
                 <h2 class="widgettitle">{{ title }}</h2>
                 <div class="menu-osnovy-yazy-ka-sql-container">
