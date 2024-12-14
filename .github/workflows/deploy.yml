@@ -28,8 +28,8 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Create Sitemap
-        run: node ./sitemap.js
+      - name: Create Sitemap and Robots
+        run: node ./sitemap.js; node ./robots.js
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v4
