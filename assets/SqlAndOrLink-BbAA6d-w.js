@@ -1,0 +1,1 @@
+import{_ as n,r,o as s,f as a,w as c,g as l,b as _}from"./index-DC062HW8.js";const d={};function f(o,e){const t=r("RouterLink");return s(),a(t,{to:{name:"sql-and-or"},title:"Операторы SQL AND & OR - примеры использования"},{default:c(()=>[l(o.$slots,"default",{},()=>[e[0]||(e[0]=_("AND, OR"))])]),_:3})}const m=n(d,[["render",f]]);export{m as S};

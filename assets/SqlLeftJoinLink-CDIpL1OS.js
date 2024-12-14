@@ -1,0 +1,1 @@
+import{_ as o,r as n,o as r,f as s,w as a,b as c}from"./index-DC062HW8.js";const i={};function _(f,e){const t=n("RouterLink");return r(),s(t,{to:{name:"sql-left-join"},title:"Оператор SQL LEFT JOIN - примеры использования"},{default:a(()=>e[0]||(e[0]=[c("SQL LEFT JOIN")])),_:1})}const L=o(i,[["render",_]]);export{L as S};

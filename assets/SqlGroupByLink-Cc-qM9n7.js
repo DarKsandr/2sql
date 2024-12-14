@@ -1,1 +1,0 @@
-import{_ as t,r as n,o as r,f as s,w as a,b as c}from"./index-DM06pxZV.js";const _={};function i(p,o){const e=n("RouterLink");return r(),s(e,{to:{name:"sql-group-by"},title:"Оператор SQL GROUP BY - примеры использования"},{default:a(()=>o[0]||(o[0]=[c("SQL GROUP BY")])),_:1})}const l=t(_,[["render",i]]);export{l as S};
