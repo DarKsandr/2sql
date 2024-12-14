@@ -8,7 +8,7 @@ const hostname = process.env.VITE_HOSTNAME;
 // Creates a sitemap object given the input configuration with URLs
 const sitemap = new SitemapStream({ hostname });
 
-const writeStream = createWriteStream(process.env.VITE_PUBLIC + '/sitemap.xml');
+const writeStream = createWriteStream(process.env.VITE_SITEMAP);
 sitemap.pipe(writeStream);
 
 routes.forEach(route => {
