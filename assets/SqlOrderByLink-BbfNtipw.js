@@ -1,1 +1,0 @@
-import{_ as t,r,o as n,f as s,w as a,b as c}from"./index-DfPad6ww.js";const _={};function i(f,e){const o=r("RouterLink");return n(),s(o,{to:{name:"sql-order-by"},title:"Оператор SQL ORDER BY - примеры использования"},{default:a(()=>e[0]||(e[0]=[c("SQL ORDER BY")])),_:1})}const d=t(_,[["render",i]]);export{d as S};
