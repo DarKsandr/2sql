@@ -96,10 +96,18 @@ FROM Universities
 </pre>
   <p><em>Ответ: 7</em></p>
   <p><strong>Пример 2.</strong> Найти количество университетов расположенных в Москве, используя оператор SQL COUNT:</p>
-  <pre class="brush: sql; title: ; notranslate" title="">SELECT COUNT(*) FROM Universities WHERE Location = 'Moscow'</pre>
+  <pre class="brush: sql; title: ; notranslate" title="">
+SELECT COUNT(*) 
+FROM Universities 
+WHERE Location = 'Moscow'
+</pre>
   <p><em>Ответ: 3</em></p>
   <p><strong>Пример 3.</strong> Найти количество университетов с больше чем 20 факультетами, используя оператор SQL COUNT:</p>
-  <pre class="brush: sql; title: ; notranslate" title="">SELECT COUNT(*) FROM Universities WHERE Faculties &gt; 20</pre>
+  <pre class="brush: sql; title: ; notranslate" title="">
+SELECT COUNT(*) 
+FROM Universities 
+WHERE Faculties &gt; 20
+</pre>
   <p><em>Ответ: 2</em></p>
 
 </template>
