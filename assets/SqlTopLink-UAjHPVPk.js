@@ -1,1 +1,0 @@
-import{_ as e,r as n,o as r,f as s,w as a,b as c}from"./index-CGdcHSF2.js";const _={};function i(p,o){const t=n("RouterLink");return r(),s(t,{to:{name:"sql-top"},title:"Оператор SQL TOP - примеры использования"},{default:a(()=>o[0]||(o[0]=[c("SQL TOP")])),_:1})}const l=e(_,[["render",i]]);export{l as S};
