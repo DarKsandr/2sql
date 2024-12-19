@@ -90,7 +90,10 @@
     </tbody>
   </table-scroll>
   <p><strong>Пример 1.</strong> Вывести число записей таблицы, используя оператор SQL COUNT:</p>
-  <pre class="brush: sql; title: ; notranslate" title="">SELECT COUNT(*)<br/> FROM Universities</pre>
+  <pre class="brush: sql; title: ; notranslate" title="">
+SELECT COUNT(*) 
+FROM Universities
+</pre>
   <p><em>Ответ: 7</em></p>
   <p><strong>Пример 2.</strong> Найти количество университетов расположенных в Москве, используя оператор SQL COUNT:</p>
   <pre class="brush: sql; title: ; notranslate" title="">SELECT COUNT(*) FROM Universities WHERE Location = 'Moscow'</pre>
