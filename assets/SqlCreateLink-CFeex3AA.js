@@ -1,0 +1,1 @@
+import{_ as o,r as n,o as r,f as s,w as a,b as c}from"./index-CSTbT01z.js";const _={};function i(f,e){const t=n("RouterLink");return r(),s(t,{to:{name:"sql-create"},title:"Оператор SQL CREATE - примеры использования"},{default:a(()=>e[0]||(e[0]=[c("SQL CREATE")])),_:1})}const m=o(_,[["render",i]]);export{m as S};
